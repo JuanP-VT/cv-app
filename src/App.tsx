@@ -4,6 +4,7 @@ import Header from './components/Header'
 import './App.css'
 import CvForm from './components/CvForm'
 import Footer from './components/Footer'
+import CvTemplate from './components/CvTemplate'
 
 interface State {}
 
@@ -22,7 +23,7 @@ class App extends Component<State> {
         <Header />
         <div id='main'>
           <CvForm saveInAppState={this.saveInAppState} />
-          {/* <CvTemplate/> */}
+          <CvTemplate />
         </div>
         <Footer />
       </>
