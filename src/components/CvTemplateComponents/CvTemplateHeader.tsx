@@ -11,10 +11,10 @@ class CvTemplateHeader extends PureComponent<Props> {
     return (
       <div id='cvHeader'>
         <div id='names'>
-          <div id='cvFirstName'></div>
-          <div id='cvSecondName'></div>
-          <div id='cvTitle'></div>
+          <div id='cvFirstName'>{this.props.firstName}</div>
+          <div id='cvSecondName'>{this.props.secondName}</div>
         </div>
+        <div id='cvTitle'>{this.props.title}</div>
       </div>
     )
   }

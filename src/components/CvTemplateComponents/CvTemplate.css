@@ -1,0 +1,16 @@
+#templateContainer {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100%;
+}
+#cvHeader {
+  padding: 10px;
+  background-color: rgb(127, 217, 255);
+}
+#names {
+  display: flex;
+}
+#cvTitle {
+  font-size: 10;
+}

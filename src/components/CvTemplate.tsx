@@ -7,8 +7,8 @@ interface Props {}
 export default class CvTemplate extends PureComponent<Props> {
   render() {
     return (
-      <div>
-        <CvTemplateHeader firstName='' secondName='' title='' />
+      <div id='templateContainer'>
+        <CvTemplateHeader firstName='Juan Pablo' secondName='Valdez' title='Junior Web Dev' />
       </div>
     )
   }
