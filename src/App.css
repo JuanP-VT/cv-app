@@ -25,3 +25,17 @@
 input {
   display: block;
 }
+#photoInputContainer {
+  position: relative;
+  margin-bottom: 30px;
+}
+#photoInputText {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: absolute;
+}
+#photoInput {
+  position: absolute;
+  opacity: 0;
+}
