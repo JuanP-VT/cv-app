@@ -44,7 +44,7 @@
 }
 #photoContainer {
   display: flex;
-  height: 40%;
+  height: 35%;
   width: 100%;
   border-bottom: 1px solid black;
   justify-items: center;
