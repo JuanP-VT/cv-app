@@ -1,16 +1,45 @@
 #templateContainer {
   display: flex;
   flex-direction: column;
-  height: 200px;
+  height: 800px;
   width: 100%;
+  border: solid black 1px;
 }
 #cvHeader {
   padding: 10px;
   background-color: rgb(127, 217, 255);
+  padding: 20px;
 }
 #names {
   display: flex;
 }
 #cvTitle {
   font-size: 10;
+  font-size: 1.6rem;
 }
+#cvFirstName {
+  margin-right: 10px;
+  font-size: 2rem;
+  font-weight: 800;
+}
+#cvSecondName {
+  font-size: 2rem;
+  font-weight: 800;
+}
+#templateBody {
+  border: solid black 1px;
+  display: flex;
+  height: 100%;
+}
+#templateMain {
+  border-right: solid black 1px;
+  width: 70%;
+}
+#templateSide {
+  display: flex;
+  flex-direction: column;
+}
+/* #photoContainer {
+}
+#userPhoto {
+} */

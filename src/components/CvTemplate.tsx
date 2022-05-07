@@ -22,6 +22,12 @@ export default class CvTemplate extends PureComponent<Props> {
           secondName={this.props.appState.lastName}
           title={this.props.appState.title}
         />
+        <div id='templateBody'>
+          <div id='templateMain'></div>
+          <div id='templateSide'>
+            <div id='photoContainer'></div>
+          </div>
+        </div>
       </div>
     )
   }
