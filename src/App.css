@@ -12,7 +12,7 @@
 }
 #Header {
   font-family: 'Bungee', cursive;
-  height: clamp(10vh, 15vh, 200px);
+  height: clamp(10vh, 15vh, 150px);
   width: 100%;
   padding: 40px;
   font-size: 3rem;
@@ -21,6 +21,7 @@
 #main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  padding: 50px;
 }
 input {
   display: block;
