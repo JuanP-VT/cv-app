@@ -29,6 +29,8 @@ export default class CvTemplate extends PureComponent<Props> {
             <div id='photoContainer'>
               <img id='userPhoto' src={this.props.appState.photoSrc} alt='userPicture' />
             </div>
+            <div id='personalDetails'></div>
+            <div id='referencePages'></div>
           </div>
         </div>
       </div>
