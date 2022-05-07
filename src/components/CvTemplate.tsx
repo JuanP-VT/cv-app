@@ -2,13 +2,11 @@
 import React, { PureComponent } from 'react'
 import './CvTemplateComponents/CvTemplate.css'
 import CvTemplateHeader from './CvTemplateComponents/CvTemplateHeader'
+import PersonalDetails from './CvTemplateComponents/PersonalDetails'
+import ReferencePages from './CvTemplateComponents/ReferencePages'
+import appState from './interface'
 interface Props {
-  appState: {
-    firstName?: string
-    lastName?: string
-    title?: string
-    photoSrc?: string
-  }
+  appState: appState
 }
 
 export default class CvTemplate extends PureComponent<Props> {
@@ -29,8 +27,8 @@ export default class CvTemplate extends PureComponent<Props> {
             <div id='photoContainer'>
               <img id='userPhoto' src={this.props.appState.photoSrc} alt='userPicture' />
             </div>
-            <div id='personalDetails'></div>
-            <div id='referencePages'></div>
+            <PersonalDetails appState={this.props.appState} />
+            <ReferencePages appState={this.props.appState} />
           </div>
         </div>
       </div>
