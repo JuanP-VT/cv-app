@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react'
 
 interface Props {
-  firstName: string
-  secondName: string
-  title: string
+  firstName?: string
+  secondName?: string
+  title?: string
 }
 
 class CvTemplateHeader extends PureComponent<Props> {
