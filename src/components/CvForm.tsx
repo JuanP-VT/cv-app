@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import PhotoInput from './photoInput'
 interface Props {
   saveInAppState: (objProp: string, id: string) => void
+  savePhotoSrc: () => void
 }
 
 export default class CvForm extends PureComponent<Props> {
@@ -26,7 +27,7 @@ export default class CvForm extends PureComponent<Props> {
           placeholder='Title'
           onChange={() => this.props.saveInAppState('title', 'title')}
         />
-        <PhotoInput />
+        <PhotoInput savePhotoSrc={this.props.savePhotoSrc} />
       </div>
     )
   }

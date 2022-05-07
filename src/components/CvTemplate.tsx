@@ -7,6 +7,7 @@ interface Props {
     firstName?: string
     lastName?: string
     title?: string
+    photoSrc?: string
   }
 }
 
@@ -25,7 +26,9 @@ export default class CvTemplate extends PureComponent<Props> {
         <div id='templateBody'>
           <div id='templateMain'></div>
           <div id='templateSide'>
-            <div id='photoContainer'></div>
+            <div id='photoContainer'>
+              <img id='userPhoto' src={this.props.appState.photoSrc} alt='userPicture' />
+            </div>
           </div>
         </div>
       </div>

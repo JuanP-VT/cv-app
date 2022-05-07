@@ -1,11 +1,14 @@
 import React, { PureComponent } from 'react'
 
-class photoInput extends PureComponent {
+interface Props {
+  savePhotoSrc: () => void
+}
+class photoInput extends PureComponent<Props> {
   render() {
     return (
       <div id='photoInputContainer'>
         <h6 id='photoInputText'>Photo</h6>
-        <input id='photoInput' type='file' />
+        <input id='photoInput' type='file' onChange={() => this.props.savePhotoSrc()} />
       </div>
     )
   }

@@ -38,8 +38,16 @@
 #templateSide {
   display: flex;
   flex-direction: column;
+  width: 30%;
 }
-/* #photoContainer {
+#photoContainer {
+  border: solid black 1px;
+  height: 30%;
+  width: 100%;
+  padding: 10px;
 }
 #userPhoto {
-} */
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}

@@ -10,6 +10,7 @@ interface State {
   firstName?: string
   lastName?: string
   title?: string
+  photoSrc?: string
 }
 
 class App extends Component<State> {
@@ -26,12 +27,21 @@ class App extends Component<State> {
       () => console.log(this.state),
     )
   }
+  savePhotoSrc = () => {
+    const input = document.querySelector('#photoInput') as HTMLInputElement
+    if (input.files !== null) {
+      const photoSrc = URL.createObjectURL(input.files[0])
+      this.setState(() => ({
+        photoSrc: photoSrc,
+      }))
+    }
+  }
   render() {
     return (
       <>
         <Header />
         <div id='main'>
-          <CvForm saveInAppState={this.saveInAppState} />
+          <CvForm saveInAppState={this.saveInAppState} savePhotoSrc={this.savePhotoSrc} />
           <CvTemplate appState={this.state} />
         </div>
         <Footer />
