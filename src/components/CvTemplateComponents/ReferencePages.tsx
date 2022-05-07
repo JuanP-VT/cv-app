@@ -12,7 +12,7 @@ class ReferencePages extends Component<Props> {
   state = {}
 
   render() {
-    return <div>ReferencePages</div>
+    return <div></div>
   }
 }
 

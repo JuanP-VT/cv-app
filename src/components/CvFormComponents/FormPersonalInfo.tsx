@@ -48,7 +48,7 @@ class FormPersonalInfo extends Component<Props> {
           id='email'
           type='text'
           placeholder='Email'
-          onChange={() => this.props.saveInAppState('phoneNumber', 'phoneNumber')}
+          onChange={() => this.props.saveInAppState('email', 'email')}
         />
         <input
           id='description'

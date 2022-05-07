@@ -4,7 +4,8 @@
   margin: 0px;
   padding: 0px;
   font-family: 'Nunito', sans-serif;
-  font-size: 18px;
+  font-size: 2vh;
+  font-weight: 300;
 }
 #root {
   display: flex;
@@ -21,7 +22,7 @@
 #main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  padding: 50px;
+  padding: 100px;
 }
 input {
   display: block;
