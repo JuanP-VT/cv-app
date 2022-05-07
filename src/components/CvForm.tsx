@@ -1,9 +1,7 @@
+/* eslint-disable @typescript-eslint/no-empty-interface */
 import React, { PureComponent } from 'react'
 import PhotoInput from './photoInput'
-
-interface Props {
-  saveInAppState: () => void
-}
+interface Props {}
 
 export default class CvForm extends PureComponent<Props> {
   render() {

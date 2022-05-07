@@ -9,10 +9,8 @@ import CvTemplate from './components/CvTemplate'
 interface State {}
 
 class App extends Component<State> {
-  constructor(props: string) {
-    super(props)
-    this.state = {}
-  }
+  state = {}
+
   //pending
   saveInAppState(): void {
     console.log(this)
@@ -22,7 +20,7 @@ class App extends Component<State> {
       <>
         <Header />
         <div id='main'>
-          <CvForm saveInAppState={this.saveInAppState} />
+          <CvForm />
           <CvTemplate />
         </div>
         <Footer />
