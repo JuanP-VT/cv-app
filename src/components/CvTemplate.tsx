@@ -5,7 +5,7 @@ import CvTemplateHeader from './CvTemplateComponents/CvTemplateHeader'
 interface Props {
   appState: {
     firstName?: string
-    secondName?: string
+    lastName?: string
     title?: string
   }
 }
@@ -19,7 +19,7 @@ export default class CvTemplate extends PureComponent<Props> {
       <div id='templateContainer'>
         <CvTemplateHeader
           firstName={this.props.appState.firstName}
-          secondName={this.props.appState.secondName}
+          secondName={this.props.appState.lastName}
           title={this.props.appState.title}
         />
       </div>

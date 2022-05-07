@@ -8,23 +8,30 @@ import CvTemplate from './components/CvTemplate'
 
 interface State {
   firstName?: string
-  secondName?: string
+  lastName?: string
   title?: string
 }
 
 class App extends Component<State> {
   state = {}
-
-  //pending
-  saveInAppState(): void {
-    console.log(this)
+  saveInAppState = (objProp: string, id: string) => {
+    // Parameter id refers to input id
+    // Get value of input element
+    const input = document.querySelector(`#${id}`) as HTMLInputElement
+    const myVal = input.value
+    this.setState(
+      () => ({
+        [objProp]: myVal,
+      }),
+      () => console.log(this.state),
+    )
   }
   render() {
     return (
       <>
         <Header />
         <div id='main'>
-          <CvForm />
+          <CvForm saveInAppState={this.saveInAppState} />
           <CvTemplate appState={this.state} />
         </div>
         <Footer />
