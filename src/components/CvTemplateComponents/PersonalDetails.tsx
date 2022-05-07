@@ -15,7 +15,9 @@ class PersonalDetails extends Component<Props> {
   render() {
     return (
       <div id='personalDetails'>
-        <div id='personalDetailsHeader'>Personal Details</div>
+        <div id='personalDetailsHeader' className='highlight'>
+          Personal Details
+        </div>
         <div className='detailsBox'>
           <div className='detailsIconBox'>
             <img src={addressIcon} alt='addressIcon' className='detailsIcon' />

@@ -65,11 +65,16 @@
   flex-direction: column;
   height: 33%;
 }
+#personalDetailsHeader {
+  font-size: 1.2rem;
+  border-bottom: 1px solid;
+  text-align: center;
+}
 
 .detailsBox {
   display: flex;
-  border: 1px solid black;
   padding: 10px;
+  margin-left: 10px;
 }
 .detailsIconBox {
   display: flex;
@@ -81,6 +86,7 @@
   width: 30px;
   margin-right: 10px;
   object-fit: contain;
+  margin-bottom: 18px;
 }
 #referencePages {
   display: flex;
