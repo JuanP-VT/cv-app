@@ -11,7 +11,7 @@ class FormPersonalInfo extends Component<Props> {
 
   render() {
     return (
-      <>
+      <div id='templatePersonalInfo'>
         <div className='highlight'>Personal Information</div>
         <input
           id='firstName'
@@ -57,7 +57,7 @@ class FormPersonalInfo extends Component<Props> {
           onChange={() => this.props.saveInAppState('description', 'description')}
           maxLength={500}
         />
-      </>
+      </div>
     )
   }
 }

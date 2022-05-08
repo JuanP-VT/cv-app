@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import Education from './CvFormComponents/Education'
 import FormPersonalInfo from './CvFormComponents/FormPersonalInfo'
 interface Props {
   saveInAppState: (objProp: string, id: string) => void
@@ -10,6 +11,10 @@ export default class CvForm extends PureComponent<Props> {
     return (
       <div id='cvFormContainer'>
         <FormPersonalInfo
+          saveInAppState={this.props.saveInAppState}
+          savePhotoSrc={this.props.savePhotoSrc}
+        />
+        <Education
           saveInAppState={this.props.saveInAppState}
           savePhotoSrc={this.props.savePhotoSrc}
         />

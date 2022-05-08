@@ -7,4 +7,10 @@ export default interface appState {
   phoneNumber?: string
   email?: string
   description?: string
+  uniName?: string
+  uniCity?: string
+  uniDegree?: string
+  uniSubject?: string
+  uniFrom?: string
+  uniTo?: string
 }
