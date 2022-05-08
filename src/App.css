@@ -13,7 +13,7 @@
 }
 #Header {
   font-family: 'Bungee', cursive;
-  height: clamp(10vh, 15vh, 150px);
+  height: 15vh;
   width: 100%;
   padding: 40px;
   font-size: 3rem;
@@ -39,4 +39,8 @@ input {
 #photoInput {
   position: absolute;
   opacity: 0;
+}
+
+#description {
+  height: 2vw;
 }

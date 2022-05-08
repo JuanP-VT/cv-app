@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
 import React, { PureComponent } from 'react'
 import './CvTemplateComponents/CvTemplate.css'
+import CvTemplateDescription from './CvTemplateComponents/CvTemplateDescription'
 import CvTemplateHeader from './CvTemplateComponents/CvTemplateHeader'
 import PersonalDetails from './CvTemplateComponents/PersonalDetails'
 import ReferencePages from './CvTemplateComponents/ReferencePages'
@@ -22,7 +23,9 @@ export default class CvTemplate extends PureComponent<Props> {
           title={this.props.appState.title}
         />
         <div id='templateBody'>
-          <div id='templateMain'></div>
+          <div id='templateMain'>
+            <CvTemplateDescription appState={this.props.appState} />
+          </div>
           <div id='templateSide'>
             <div id='photoContainer'>
               <img id='userPhoto' src={this.props.appState.photoSrc} alt='userPicture' />
