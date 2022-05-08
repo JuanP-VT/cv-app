@@ -17,9 +17,11 @@
   overflow: hidden;
 }
 #main {
+  height: clamp(800px, 1200px, 1500px);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  padding: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 input {
   display: block;

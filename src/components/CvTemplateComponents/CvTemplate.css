@@ -8,12 +8,13 @@
   height: 800px;
   width: 100%;
   border: 1px solid black;
+  height: 100%;
 }
 #cvHeader {
   padding: 10px;
   background-color: rgb(112, 143, 157);
   padding: 20px;
-  height: 20%;
+  height: 10%;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
@@ -40,6 +41,7 @@
 #templateMain {
   width: 70%;
   border-right: solid black 1px;
+  padding: 15px;
 }
 #templateSide {
   display: flex;
@@ -76,6 +78,7 @@
   display: flex;
   padding: 10px;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 .detailsIconBox {
   display: flex;
@@ -101,4 +104,10 @@
 #descriptionContent {
   width: 100%;
   word-wrap: break-word;
+}
+
+#templatePagesHeader {
+  font-size: 1.2rem;
+  border-bottom: 1px solid;
+  text-align: center;
 }
