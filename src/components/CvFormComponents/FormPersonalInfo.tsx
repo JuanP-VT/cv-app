@@ -12,7 +12,7 @@ class FormPersonalInfo extends Component<Props> {
   render() {
     return (
       <>
-        {' '}
+        <div className='highlight'>Personal Information</div>
         <input
           id='firstName'
           type='text'
@@ -55,6 +55,7 @@ class FormPersonalInfo extends Component<Props> {
           type='text'
           placeholder='Description'
           onChange={() => this.props.saveInAppState('description', 'description')}
+          maxLength={500}
         />
       </>
     )

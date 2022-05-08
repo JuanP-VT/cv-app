@@ -1,5 +1,6 @@
 .highlight {
   font-weight: 800;
+  padding: 5px;
 }
 #templateContainer {
   display: flex;
@@ -92,4 +93,12 @@
   display: flex;
   flex-direction: column;
   height: 33%;
+}
+#templateDescription {
+  display: flex;
+  flex-direction: column;
+}
+#descriptionContent {
+  width: 100%;
+  word-wrap: break-word;
 }
