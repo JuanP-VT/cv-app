@@ -6,15 +6,19 @@ import CvForm from './components/CvForm'
 import Footer from './components/Footer'
 import CvTemplate from './components/CvTemplate'
 
-interface State {
-  firstName?: string
-  lastName?: string
-  title?: string
-  photoSrc?: string
-}
-
-class App extends Component<State> {
-  state = {}
+class App extends Component {
+  state = {
+    numOfSkills: 0,
+    hasSkill1: false,
+    hasSkill2: false,
+    hasSkill3: false,
+    hasSkill4: false,
+    hasSkill5: false,
+    hasSkill6: false,
+    hasSkill7: false,
+    hasSkill8: false,
+    hasSkill9: false,
+  }
   saveInAppState = (objProp: string, id: string) => {
     // Parameter id refers to input id
     // Get value of input element
@@ -41,7 +45,11 @@ class App extends Component<State> {
       <>
         <Header />
         <div id='main'>
-          <CvForm saveInAppState={this.saveInAppState} savePhotoSrc={this.savePhotoSrc} />
+          <CvForm
+            appState={this.state}
+            saveInAppState={this.saveInAppState}
+            savePhotoSrc={this.savePhotoSrc}
+          />
           <CvTemplate appState={this.state} />
         </div>
         <Footer />
