@@ -25,15 +25,78 @@ class Skills extends Component<Props> {
     const hasSkill9 = this.props.appState.hasSkill9
     return (
       <div id='templateSkills'>
-        {hasSkill1 && <FormSkill appState={this.props.appState} refNum='1' refInState='skill1' />}
-        {hasSkill2 && <FormSkill appState={this.props.appState} refNum='2' refInState='skill2' />}
-        {hasSkill3 && <FormSkill appState={this.props.appState} refNum='3' refInState='skill3' />}
-        {hasSkill4 && <FormSkill appState={this.props.appState} refNum='4' refInState='skill4' />}
-        {hasSkill5 && <FormSkill appState={this.props.appState} refNum='5' refInState='skill5' />}
-        {hasSkill6 && <FormSkill appState={this.props.appState} refNum='6' refInState='skill6' />}
-        {hasSkill7 && <FormSkill appState={this.props.appState} refNum='7' refInState='skill7' />}
-        {hasSkill8 && <FormSkill appState={this.props.appState} refNum='8' refInState='skill8' />}
-        {hasSkill9 && <FormSkill appState={this.props.appState} refNum='9' refInState='skill9' />}
+        {hasSkill1 && (
+          <FormSkill
+            appState={this.props.appState}
+            refNum='1'
+            refInState='skill1'
+            saveInAppState={this.props.saveInAppState}
+          />
+        )}
+        {hasSkill2 && (
+          <FormSkill
+            appState={this.props.appState}
+            refNum='2'
+            refInState='skill2'
+            saveInAppState={this.props.saveInAppState}
+          />
+        )}
+        {hasSkill3 && (
+          <FormSkill
+            appState={this.props.appState}
+            refNum='3'
+            refInState='skill3'
+            saveInAppState={this.props.saveInAppState}
+          />
+        )}
+        {hasSkill4 && (
+          <FormSkill
+            appState={this.props.appState}
+            refNum='4'
+            refInState='skill4'
+            saveInAppState={this.props.saveInAppState}
+          />
+        )}
+        {hasSkill5 && (
+          <FormSkill
+            appState={this.props.appState}
+            refNum='5'
+            refInState='skill5'
+            saveInAppState={this.props.saveInAppState}
+          />
+        )}
+        {hasSkill6 && (
+          <FormSkill
+            appState={this.props.appState}
+            refNum='6'
+            refInState='skill6'
+            saveInAppState={this.props.saveInAppState}
+          />
+        )}
+        {hasSkill7 && (
+          <FormSkill
+            appState={this.props.appState}
+            refNum='7'
+            refInState='skill7'
+            saveInAppState={this.props.saveInAppState}
+          />
+        )}
+        {hasSkill8 && (
+          <FormSkill
+            appState={this.props.appState}
+            refNum='8'
+            refInState='skill8'
+            saveInAppState={this.props.saveInAppState}
+          />
+        )}
+        {hasSkill9 && (
+          <FormSkill
+            appState={this.props.appState}
+            refNum='9'
+            refInState='skill9'
+            saveInAppState={this.props.saveInAppState}
+          />
+        )}
 
         <button id='addSkill' onClick={this.props.handleAddSkill}>
           Add Skill
