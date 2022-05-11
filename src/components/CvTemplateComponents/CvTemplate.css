@@ -111,3 +111,33 @@
   border-bottom: 1px solid;
   text-align: center;
 }
+#templateEducation {
+  display: flex;
+  flex-direction: column;
+}
+.eduBox {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.eduSide {
+  display: flex;
+  width: 40%;
+}
+.eduDates {
+  padding: 5px;
+  display: flex;
+}
+.eduMain {
+  width: 60%;
+}
+#uniCityName {
+  display: flex;
+}
+#templateUniName {
+  margin-right: 5px;
+}
+#templateUniCityName {
+  margin-left: 5px;
+}

@@ -23,11 +23,7 @@
   padding-left: 100px;
   padding-right: 100px;
 }
-input {
-  display: block;
-  font-size: 0.8rem;
-  padding: 5px;
-}
+
 #photoInputContainer {
   position: relative;
   margin-bottom: 30px;
@@ -44,4 +40,14 @@ input {
 
 #description {
   height: 6vh;
+}
+/*----- move to separate css file */
+#addSkill {
+  margin-top: 10px;
+  padding: 5px;
+}
+input {
+  display: block;
+  font-size: 0.8rem;
+  padding: 5px;
 }
