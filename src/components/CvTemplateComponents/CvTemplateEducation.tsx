@@ -13,15 +13,27 @@ class CvTemplateEducation extends Component<Props> {
         <div className='eduBox'>
           <div className='eduSide'>
             <div className='eduDates'>
-              <div className='eduFrom'>2007</div> - <div className='eduTo'>2010</div>
+              <div className='eduFrom highlight'>{this.props.appState.uniFrom}</div>{' '}
+              <span className='highlight'> - </span>
+              <div className='eduTo highlight'>{this.props.appState.uniTo}</div>
             </div>
           </div>
           <div className='eduMain'>
             <div id='uniCityName'>
-              <div id='templateUniName'>Tec</div> , <div id='templateUniCityName'>Lm</div>
+              <div id='templateUniName' className='highlight'>
+                {this.props.appState.uniName}
+              </div>
+              <span className='highlight'>,</span>
+              <div id='templateUniCityName' className='highlight'>
+                {this.props.appState.uniCity}
+              </div>
             </div>
-            <div id='uniDegree'>Degree:</div>
-            <div id='uniSubject'>Subject:</div>
+            <div id='uniDegree'>
+              <span className='highlight'>Degree:</span> {this.props.appState.uniDegree}
+            </div>
+            <div id='uniSubject'>
+              <span className='highlight'>Subject:</span> {this.props.appState.uniSubject}
+            </div>
           </div>
         </div>
       </div>

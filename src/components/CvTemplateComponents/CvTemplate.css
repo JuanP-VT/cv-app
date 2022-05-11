@@ -1,6 +1,5 @@
 .highlight {
   font-weight: 800;
-  padding: 5px;
 }
 #templateContainer {
   display: flex;
@@ -104,6 +103,7 @@
 #descriptionContent {
   width: 100%;
   word-wrap: break-word;
+  margin-bottom: 10px;
 }
 
 #templatePagesHeader {
@@ -123,21 +123,19 @@
 }
 .eduSide {
   display: flex;
-  width: 40%;
+  width: 30%;
 }
 .eduDates {
   padding: 5px;
   display: flex;
 }
 .eduMain {
-  width: 60%;
+  width: 70%;
 }
 #uniCityName {
   display: flex;
 }
 #templateUniName {
-  margin-right: 5px;
 }
 #templateUniCityName {
-  margin-left: 5px;
 }

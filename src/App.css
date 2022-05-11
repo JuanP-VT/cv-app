@@ -5,7 +5,8 @@
   margin: 0px;
   padding: 0px;
   font-family: 'Nunito', sans-serif;
-  font-size: 1.9vh;
+  /* font-size: 1.9vh; */
+  font-size: 100%;
   font-weight: 300;
 }
 
