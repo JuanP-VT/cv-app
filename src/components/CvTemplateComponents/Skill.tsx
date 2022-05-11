@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 interface Props {
   skill?: string
+  skillSrc?: string
 }
 
 class Skill extends Component<Props> {
@@ -11,7 +12,7 @@ class Skill extends Component<Props> {
     return (
       <div className='skillBox'>
         <div className='skillIcon'>
-          <img src='asw/.d' />
+          <img className='skill-icon' src={this.props.skillSrc} />
         </div>
         <div className='skillContent'>{this.props.skill}</div>
       </div>

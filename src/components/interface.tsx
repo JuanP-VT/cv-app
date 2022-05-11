@@ -32,4 +32,13 @@ export default interface appState {
   skill7?: string
   skill8?: string
   skill9?: string
+  skill1Src?: string
+  skill2Src?: string
+  skill3Src?: string
+  skill4Src?: string
+  skill5Src?: string
+  skill6Src?: string
+  skill7Src?: string
+  skill8Src?: string
+  skill9Src?: string
 }

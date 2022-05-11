@@ -5,7 +5,9 @@ interface Props {
   appState: appState
   refNum: string
   refInState: string
+  srcRef: string
   saveInAppState: (objProp: string, id: string) => void
+  handleIconFiles: (objProp: string, id: string) => void
 }
 
 class FormSkill extends Component<Props> {
@@ -13,11 +15,24 @@ class FormSkill extends Component<Props> {
 
   render() {
     const Iid = this.props.refInState
+    const srcId = this.props.srcRef
     return (
-      <>
-        Skill {this.props.refNum}
-        <input id={this.props.refInState} onChange={() => this.props.saveInAppState(Iid, Iid)} />
-      </>
+      <div className='formSkillBox'>
+        <div className='formSkillInput'>
+          <span className='highlight-low'>Skill{this.props.refNum}</span>
+          <input id={this.props.refInState} onChange={() => this.props.saveInAppState(Iid, Iid)} />
+        </div>
+        <div className='skillTemplateIcon'>
+          <input
+            type='file'
+            name='imageIcon'
+            id={this.props.srcRef}
+            className='inputIconSkill'
+            onChange={() => this.props.handleIconFiles(srcId, srcId)}
+          />
+          <span className='templateIconStamp'> Add an icon for your skill</span>
+        </div>
+      </div>
     )
   }
 }

@@ -1,6 +1,9 @@
 .highlight {
   font-weight: 800;
 }
+.highlight-low {
+  font-weight: 400;
+}
 #templateContainer {
   display: flex;
   flex-direction: column;
@@ -152,3 +155,28 @@
 }
 .skillContent {
 } */
+
+.formSkillBox {
+  display: flex;
+}
+.skillTemplateIcon {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+}
+.inputIconSkill {
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+.templateIconStamp {
+  font-size: 0.7rem;
+  padding-top: 30px;
+  padding: 15px;
+}
+.skill-icon {
+  width: 30px;
+  height: 30px;
+}

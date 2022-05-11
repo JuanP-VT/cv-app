@@ -45,6 +45,15 @@ class App extends Component {
       }))
     }
   }
+  handleIconFile = (objProp: string, id: string) => {
+    const myInput = document.querySelector(`#${id}`) as HTMLInputElement
+    if (myInput.files !== null) {
+      const iconSrc = URL.createObjectURL(myInput.files[0])
+      this.setState({
+        [objProp]: iconSrc,
+      })
+    }
+  }
   updateSkillsInState = () => {
     const currentNumOfSkills = this.state.numOfSkills
     console.log(currentNumOfSkills)
@@ -129,6 +138,7 @@ class App extends Component {
             saveInAppState={this.saveInAppState}
             savePhotoSrc={this.savePhotoSrc}
             handleAddSkill={this.handleAddSkill}
+            handleIconFiles={this.handleIconFile}
           />
           <CvTemplate appState={this.state} />
         </div>

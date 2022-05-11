@@ -6,6 +6,7 @@ interface Props {
   saveInAppState: (objProp: string, id: string) => void
   savePhotoSrc: () => void
   handleAddSkill: () => void
+  handleIconFiles: (objProp: string, id: string) => void
   appState: appState
 }
 class Skills extends Component<Props> {
@@ -31,6 +32,8 @@ class Skills extends Component<Props> {
             refNum='1'
             refInState='skill1'
             saveInAppState={this.props.saveInAppState}
+            srcRef='skill1Src'
+            handleIconFiles={this.props.handleIconFiles}
           />
         )}
         {hasSkill2 && (
@@ -39,6 +42,8 @@ class Skills extends Component<Props> {
             refNum='2'
             refInState='skill2'
             saveInAppState={this.props.saveInAppState}
+            srcRef='skill2Src'
+            handleIconFiles={this.props.handleIconFiles}
           />
         )}
         {hasSkill3 && (
@@ -47,6 +52,8 @@ class Skills extends Component<Props> {
             refNum='3'
             refInState='skill3'
             saveInAppState={this.props.saveInAppState}
+            srcRef='skill3Src'
+            handleIconFiles={this.props.handleIconFiles}
           />
         )}
         {hasSkill4 && (
@@ -55,6 +62,8 @@ class Skills extends Component<Props> {
             refNum='4'
             refInState='skill4'
             saveInAppState={this.props.saveInAppState}
+            srcRef='skill4Src'
+            handleIconFiles={this.props.handleIconFiles}
           />
         )}
         {hasSkill5 && (
@@ -63,6 +72,8 @@ class Skills extends Component<Props> {
             refNum='5'
             refInState='skill5'
             saveInAppState={this.props.saveInAppState}
+            srcRef='skill5Src'
+            handleIconFiles={this.props.handleIconFiles}
           />
         )}
         {hasSkill6 && (
@@ -71,6 +82,8 @@ class Skills extends Component<Props> {
             refNum='6'
             refInState='skill6'
             saveInAppState={this.props.saveInAppState}
+            srcRef='skill6Src'
+            handleIconFiles={this.props.handleIconFiles}
           />
         )}
         {hasSkill7 && (
@@ -79,6 +92,8 @@ class Skills extends Component<Props> {
             refNum='7'
             refInState='skill7'
             saveInAppState={this.props.saveInAppState}
+            srcRef='skill7Src'
+            handleIconFiles={this.props.handleIconFiles}
           />
         )}
         {hasSkill8 && (
@@ -87,6 +102,8 @@ class Skills extends Component<Props> {
             refNum='8'
             refInState='skill8'
             saveInAppState={this.props.saveInAppState}
+            srcRef='skill8Src'
+            handleIconFiles={this.props.handleIconFiles}
           />
         )}
         {hasSkill9 && (
@@ -95,6 +112,8 @@ class Skills extends Component<Props> {
             refNum='9'
             refInState='skill9'
             saveInAppState={this.props.saveInAppState}
+            srcRef='skill9Src'
+            handleIconFiles={this.props.handleIconFiles}
           />
         )}
 

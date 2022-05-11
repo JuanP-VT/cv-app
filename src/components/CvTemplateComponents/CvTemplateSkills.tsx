@@ -15,9 +15,15 @@ class CvTemplateSkills extends Component<Props> {
       <div id='templateSkills'>
         <span className='highlight'>Skills</span>
         <div id='skillContainer'>
-          {hasSkill1 && <Skill skill={this.props.appState.skill1} />}
-          {hasSkill2 && <Skill skill={this.props.appState.skill2} />}
-          {hasSkill3 && <Skill skill={this.props.appState.skill3} />}
+          {hasSkill1 && (
+            <Skill skill={this.props.appState.skill1} skillSrc={this.props.appState.skill1Src} />
+          )}
+          {hasSkill2 && (
+            <Skill skill={this.props.appState.skill2} skillSrc={this.props.appState.skill2Src} />
+          )}
+          {hasSkill3 && (
+            <Skill skill={this.props.appState.skill3} skillSrc={this.props.appState.skill3Src} />
+          )}
         </div>
       </div>
     )
