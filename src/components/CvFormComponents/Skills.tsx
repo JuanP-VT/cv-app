@@ -20,8 +20,8 @@ class Skills extends Component<Props> {
     return (
       <div id='templateSkills'>
         {hasSkill1 && <FormSkill appState={this.props.appState} refNum='1' refInState='skill1' />}
-        {hasSkill2 && <FormSkill appState={this.props.appState} refNum='1' refInState='skill1' />}
-        {hasSkill3 && <FormSkill appState={this.props.appState} refNum='1' refInState='skill1' />}
+        {hasSkill2 && <FormSkill appState={this.props.appState} refNum='2' refInState='skill2' />}
+        {hasSkill3 && <FormSkill appState={this.props.appState} refNum='3' refInState='skill3' />}
 
         <button id='addSkill' onClick={this.props.handleAddSkill}>
           Add Skill
