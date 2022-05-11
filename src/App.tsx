@@ -7,6 +7,10 @@ import Footer from './components/Footer'
 import CvTemplate from './components/CvTemplate'
 
 class App extends Component {
+  constructor(props: string) {
+    super(props)
+    this.handleAddSkill = this.handleAddSkill.bind(this)
+  }
   state = {
     numOfSkills: 0,
     hasSkill1: false,
@@ -21,7 +25,7 @@ class App extends Component {
   }
   saveInAppState = (objProp: string, id: string) => {
     // Parameter id refers to input id
-    // Get value of input element
+    // Get the value of input element
     const input = document.querySelector(`#${id}`) as HTMLInputElement
     const myVal = input.value
     this.setState(
@@ -40,6 +44,9 @@ class App extends Component {
       }))
     }
   }
+  handleAddSkill = () => {
+    console.log('hi')
+  }
   render() {
     return (
       <>
@@ -49,6 +56,7 @@ class App extends Component {
             appState={this.state}
             saveInAppState={this.saveInAppState}
             savePhotoSrc={this.savePhotoSrc}
+            handleAddSkill={this.handleAddSkill}
           />
           <CvTemplate appState={this.state} />
         </div>

@@ -5,6 +5,7 @@ import FormSkill from './FormSkill'
 interface Props {
   saveInAppState: (objProp: string, id: string) => void
   savePhotoSrc: () => void
+  handleAddSkill: () => void
   appState: appState
 }
 class Skills extends Component<Props> {
@@ -22,7 +23,9 @@ class Skills extends Component<Props> {
         {hasSkill2 && <FormSkill appState={this.props.appState} refNum='1' refInState='skill1' />}
         {hasSkill3 && <FormSkill appState={this.props.appState} refNum='1' refInState='skill1' />}
 
-        <button id='addSkill'>Add Skill</button>
+        <button id='addSkill' onClick={this.props.handleAddSkill}>
+          Add Skill
+        </button>
       </div>
     )
   }
