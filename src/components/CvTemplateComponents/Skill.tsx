@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import appState from '../interface'
 
 interface Props {
-  appState: appState
+  skill?: string
 }
 
 class Skill extends Component<Props> {
@@ -14,7 +13,7 @@ class Skill extends Component<Props> {
         <div className='skillIcon'>
           <img src='asw/.d' />
         </div>
-        <div className='skillContent'>Javascript</div>
+        <div className='skillContent'>{this.props.skill}</div>
       </div>
     )
   }

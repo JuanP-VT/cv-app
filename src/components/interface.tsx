@@ -23,4 +23,13 @@ export default interface appState {
   uniSubject?: string
   uniFrom?: string
   uniTo?: string
+  skill1?: string
+  skill2?: string
+  skill3?: string
+  skill4?: string
+  skill5?: string
+  skill6?: string
+  skill7?: string
+  skill8?: string
+  skill9?: string
 }
