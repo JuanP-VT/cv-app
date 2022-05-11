@@ -135,7 +135,20 @@
 #uniCityName {
   display: flex;
 }
-#templateUniName {
-}
+/* #templateUniName { */
+/* } */
 #templateUniCityName {
+  margin-left: 5px;
 }
+#skillContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.skillBox {
+  display: flex;
+  width: 100%;
+}
+/* .skillIcon {
+}
+.skillContent {
+} */
