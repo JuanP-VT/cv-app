@@ -18,10 +18,12 @@ export default class CvForm extends PureComponent<Props> {
         <FormPersonalInfo
           saveInAppState={this.props.saveInAppState}
           savePhotoSrc={this.props.savePhotoSrc}
+          appState={this.props.appState}
         />
         <Education
           saveInAppState={this.props.saveInAppState}
           savePhotoSrc={this.props.savePhotoSrc}
+          appState={this.props.appState}
         />
         <Skills
           appState={this.props.appState}

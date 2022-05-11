@@ -6,6 +6,7 @@ interface Props {
   refNum: string
   refInState: string
   srcRef: string
+  skillValue: string | undefined
   saveInAppState: (objProp: string, id: string) => void
   handleIconFiles: (objProp: string, id: string) => void
 }
@@ -20,7 +21,11 @@ class FormSkill extends Component<Props> {
       <div className='formSkillBox'>
         <div className='formSkillInput'>
           <span className='highlight-low'>Skill{this.props.refNum}</span>
-          <input id={this.props.refInState} onChange={() => this.props.saveInAppState(Iid, Iid)} />
+          <input
+            id={this.props.refInState}
+            onChange={() => this.props.saveInAppState(Iid, Iid)}
+            value={this.props.skillValue}
+          />
         </div>
         <div className='skillTemplateIcon'>
           <input
