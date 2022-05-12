@@ -7,6 +7,7 @@ interface Props {
   saveInAppState: (objProp: string, id: string) => void
   savePhotoSrc: () => void
   handleAddSkill: () => void
+  handleRemSkill: () => void
   handleIconFiles: (objProp: string, id: string) => void
   appState: appState
 }
@@ -30,6 +31,7 @@ export default class CvForm extends PureComponent<Props> {
           saveInAppState={this.props.saveInAppState}
           savePhotoSrc={this.props.savePhotoSrc}
           handleAddSkill={this.props.handleAddSkill}
+          handleRemSkills={this.props.handleRemSkill}
           handleIconFiles={this.props.handleIconFiles}
         />
       </div>

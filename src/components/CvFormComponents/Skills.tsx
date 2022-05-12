@@ -6,6 +6,7 @@ interface Props {
   saveInAppState: (objProp: string, id: string) => void
   savePhotoSrc: () => void
   handleAddSkill: () => void
+  handleRemSkills: () => void
   handleIconFiles: (objProp: string, id: string) => void
   appState: appState
 }
@@ -140,6 +141,9 @@ class Skills extends Component<Props> {
 
         <button id='addSkill' onClick={this.props.handleAddSkill}>
           Add Skill
+        </button>
+        <button id='removeSkill' onClick={this.props.handleRemSkills}>
+          Remove Skill
         </button>
       </div>
     )
