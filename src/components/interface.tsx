@@ -43,7 +43,7 @@ export default interface appState {
   skill7Src?: string
   skill8Src?: string
   skill9Src?: string
-  numOfPages?: number
+  numOfPages: number
   page1Dom?: string
   page1Url?: string
   page1Src?: string

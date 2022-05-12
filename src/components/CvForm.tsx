@@ -10,6 +10,7 @@ interface Props {
   handleAddSkill: () => void
   handleRemSkill: () => void
   handleIconFiles: (objProp: string, id: string) => void
+  handleAddPage: () => void
   appState: appState
 }
 
@@ -27,7 +28,11 @@ export default class CvForm extends PureComponent<Props> {
           savePhotoSrc={this.props.savePhotoSrc}
           appState={this.props.appState}
         />
-        <Pages appState={this.props.appState} />
+        <Pages
+          appState={this.props.appState}
+          saveInAppState={this.props.saveInAppState}
+          handleAddPage={this.props.handleAddPage}
+        />
         <Skills
           appState={this.props.appState}
           saveInAppState={this.props.saveInAppState}

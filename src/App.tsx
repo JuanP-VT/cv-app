@@ -143,6 +143,49 @@ class App extends Component {
       )
     }
   }
+  handleAddPage = () => {
+    this.setState(
+      (prevState: appState) => ({
+        numOfPages: prevState.numOfPages + 1,
+      }),
+      this.updatePagesInState,
+    )
+  }
+  updatePagesInState = () => {
+    const currentNumberOfPages = this.state.numOfPages
+    /* Setting everything off by default then check conditions to toggle the ones that 
+    are required */
+    this.setState(
+      {
+        hasPage1: false,
+        hasPage2: false,
+        hasPage3: false,
+        hasPage4: false,
+      },
+      () => {
+        if (currentNumberOfPages >= 1) {
+          this.setState({
+            hasPage1: true,
+          })
+        }
+        if (currentNumberOfPages >= 2) {
+          this.setState({
+            hasPage2: true,
+          })
+        }
+        if (currentNumberOfPages >= 3) {
+          this.setState({
+            hasPage3: true,
+          })
+        }
+        if (currentNumberOfPages >= 4) {
+          this.setState({
+            hasPage4: true,
+          })
+        }
+      },
+    )
+  }
   loadDemo = () => {
     this.setState(DEMO)
   }
@@ -158,6 +201,7 @@ class App extends Component {
             handleAddSkill={this.handleAddSkill}
             handleRemSkill={this.handleRemSkill}
             handleIconFiles={this.handleIconFile}
+            handleAddPage={this.handleAddPage}
           />
           <CvTemplate appState={this.state} />
         </div>
