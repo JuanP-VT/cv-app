@@ -29,7 +29,7 @@ class FormPage extends Component<Props> {
     return (
       <div className='pagesFormBox'>
         <div>
-          Page 1
+          <span className='highlight'>Page {this.props.pageNum}</span>
           <div className='formPagesInput'>
             <input
               id={this.props.domInputId}
