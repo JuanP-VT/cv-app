@@ -26,16 +26,16 @@ class FormSkill extends Component<Props> {
             onChange={() => this.props.saveInAppState(Iid, Iid)}
             value={this.props.skillValue}
           />
-        </div>
-        <div className='skillTemplateIcon'>
-          <input
-            type='file'
-            name='imageIcon'
-            id={this.props.srcRef}
-            className='inputIconSkill'
-            onChange={() => this.props.handleIconFiles(srcId, srcId)}
-          />
-          <span className='templateIconStamp'> Add an icon for your skill</span>
+          <div className='skillTemplateIcon'>
+            <input
+              type='file'
+              name='imageIcon'
+              id={this.props.srcRef}
+              className='inputIconSkill'
+              onChange={() => this.props.handleIconFiles(srcId, srcId)}
+            />
+            <span className='templateIconStamp'> Add an icon for your skill</span>
+          </div>
         </div>
       </div>
     )

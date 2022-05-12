@@ -40,107 +40,107 @@ class Skills extends Component<Props> {
     return (
       <div id='formSkills'>
         <div className='highlight'>Skills</div>
-
-        {hasSkill1 && (
-          <FormSkill
-            appState={this.props.appState}
-            refNum='1'
-            refInState='skill1'
-            saveInAppState={this.props.saveInAppState}
-            srcRef='skill1Src'
-            handleIconFiles={this.props.handleIconFiles}
-            skillValue={skill1Val}
-          />
-        )}
-        {hasSkill2 && (
-          <FormSkill
-            appState={this.props.appState}
-            refNum='2'
-            refInState='skill2'
-            saveInAppState={this.props.saveInAppState}
-            srcRef='skill2Src'
-            handleIconFiles={this.props.handleIconFiles}
-            skillValue={skill2Val}
-          />
-        )}
-        {hasSkill3 && (
-          <FormSkill
-            appState={this.props.appState}
-            refNum='3'
-            refInState='skill3'
-            saveInAppState={this.props.saveInAppState}
-            srcRef='skill3Src'
-            handleIconFiles={this.props.handleIconFiles}
-            skillValue={skill3Val}
-          />
-        )}
-        {hasSkill4 && (
-          <FormSkill
-            appState={this.props.appState}
-            refNum='4'
-            refInState='skill4'
-            saveInAppState={this.props.saveInAppState}
-            srcRef='skill4Src'
-            handleIconFiles={this.props.handleIconFiles}
-            skillValue={skill4Val}
-          />
-        )}
-        {hasSkill5 && (
-          <FormSkill
-            appState={this.props.appState}
-            refNum='5'
-            refInState='skill5'
-            saveInAppState={this.props.saveInAppState}
-            srcRef='skill5Src'
-            handleIconFiles={this.props.handleIconFiles}
-            skillValue={skill5Val}
-          />
-        )}
-        {hasSkill6 && (
-          <FormSkill
-            appState={this.props.appState}
-            refNum='6'
-            refInState='skill6'
-            saveInAppState={this.props.saveInAppState}
-            srcRef='skill6Src'
-            handleIconFiles={this.props.handleIconFiles}
-            skillValue={skill6Val}
-          />
-        )}
-        {hasSkill7 && (
-          <FormSkill
-            appState={this.props.appState}
-            refNum='7'
-            refInState='skill7'
-            saveInAppState={this.props.saveInAppState}
-            srcRef='skill7Src'
-            handleIconFiles={this.props.handleIconFiles}
-            skillValue={skill7Val}
-          />
-        )}
-        {hasSkill8 && (
-          <FormSkill
-            appState={this.props.appState}
-            refNum='8'
-            refInState='skill8'
-            saveInAppState={this.props.saveInAppState}
-            srcRef='skill8Src'
-            handleIconFiles={this.props.handleIconFiles}
-            skillValue={skill8Val}
-          />
-        )}
-        {hasSkill9 && (
-          <FormSkill
-            appState={this.props.appState}
-            refNum='9'
-            refInState='skill9'
-            saveInAppState={this.props.saveInAppState}
-            srcRef='skill9Src'
-            handleIconFiles={this.props.handleIconFiles}
-            skillValue={skill9Val}
-          />
-        )}
-
+        <div id='skillContainer'>
+          {hasSkill1 && (
+            <FormSkill
+              appState={this.props.appState}
+              refNum='1'
+              refInState='skill1'
+              saveInAppState={this.props.saveInAppState}
+              srcRef='skill1Src'
+              handleIconFiles={this.props.handleIconFiles}
+              skillValue={skill1Val}
+            />
+          )}
+          {hasSkill2 && (
+            <FormSkill
+              appState={this.props.appState}
+              refNum='2'
+              refInState='skill2'
+              saveInAppState={this.props.saveInAppState}
+              srcRef='skill2Src'
+              handleIconFiles={this.props.handleIconFiles}
+              skillValue={skill2Val}
+            />
+          )}
+          {hasSkill3 && (
+            <FormSkill
+              appState={this.props.appState}
+              refNum='3'
+              refInState='skill3'
+              saveInAppState={this.props.saveInAppState}
+              srcRef='skill3Src'
+              handleIconFiles={this.props.handleIconFiles}
+              skillValue={skill3Val}
+            />
+          )}
+          {hasSkill4 && (
+            <FormSkill
+              appState={this.props.appState}
+              refNum='4'
+              refInState='skill4'
+              saveInAppState={this.props.saveInAppState}
+              srcRef='skill4Src'
+              handleIconFiles={this.props.handleIconFiles}
+              skillValue={skill4Val}
+            />
+          )}
+          {hasSkill5 && (
+            <FormSkill
+              appState={this.props.appState}
+              refNum='5'
+              refInState='skill5'
+              saveInAppState={this.props.saveInAppState}
+              srcRef='skill5Src'
+              handleIconFiles={this.props.handleIconFiles}
+              skillValue={skill5Val}
+            />
+          )}
+          {hasSkill6 && (
+            <FormSkill
+              appState={this.props.appState}
+              refNum='6'
+              refInState='skill6'
+              saveInAppState={this.props.saveInAppState}
+              srcRef='skill6Src'
+              handleIconFiles={this.props.handleIconFiles}
+              skillValue={skill6Val}
+            />
+          )}
+          {hasSkill7 && (
+            <FormSkill
+              appState={this.props.appState}
+              refNum='7'
+              refInState='skill7'
+              saveInAppState={this.props.saveInAppState}
+              srcRef='skill7Src'
+              handleIconFiles={this.props.handleIconFiles}
+              skillValue={skill7Val}
+            />
+          )}
+          {hasSkill8 && (
+            <FormSkill
+              appState={this.props.appState}
+              refNum='8'
+              refInState='skill8'
+              saveInAppState={this.props.saveInAppState}
+              srcRef='skill8Src'
+              handleIconFiles={this.props.handleIconFiles}
+              skillValue={skill8Val}
+            />
+          )}
+          {hasSkill9 && (
+            <FormSkill
+              appState={this.props.appState}
+              refNum='9'
+              refInState='skill9'
+              saveInAppState={this.props.saveInAppState}
+              srcRef='skill9Src'
+              handleIconFiles={this.props.handleIconFiles}
+              skillValue={skill9Val}
+            />
+          )}
+        </div>
         <button id='addSkill' onClick={this.props.handleAddSkill}>
           Add Skill
         </button>
