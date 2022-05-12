@@ -23,6 +23,8 @@ export default interface appState {
   uniSubject?: string
   uniFrom?: string
   uniTo?: string
+  gitHub?: string
+  webPage?: string
   skill1?: string
   skill2?: string
   skill3?: string

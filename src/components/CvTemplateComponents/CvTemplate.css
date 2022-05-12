@@ -122,7 +122,9 @@
   word-wrap: break-word;
   margin-bottom: 10px;
 }
-
+#templatePages {
+  padding: 15px;
+}
 #templatePagesHeader {
   font-size: 1.2rem;
   border-bottom: 1px solid;

@@ -18,22 +18,28 @@ class ReferencePages extends Component<Props> {
         <div id='templatePagesHeader' className='highlight'>
           Pages
         </div>
+
         <div className='detailsBox'>
-          <div className='detailsIconBox'>
-            <img src={gitHubIcon} alt='emailIcon' className='detailsIcon' />
+          <div className='detailsBoxTop'>
+            <div className='detailsIconBox'>
+              <img src={gitHubIcon} alt='gitHubIcon' className='detailsIcon' />
+            </div>
+            <p className='highlight personalInfoContent'>GitHub</p>
           </div>
-          <div className='detailsInfo'>
-            <p className='highlight'>GitHub</p>
-            {/* <p>{this.props.appState.email}</p> */}
+          <div className='detailsBoxBot'>
+            <p>{this.props.appState.gitHub}</p>
           </div>
         </div>
+
         <div className='detailsBox'>
-          <div className='detailsIconBox'>
-            <img src={myPage} alt='emailIcon' className='detailsIcon' />
+          <div className='detailsBoxTop'>
+            <div className='detailsIconBox'>
+              <img src={myPage} alt='myPageIcon' className='detailsIcon' />
+            </div>
+            <p className='highlight personalInfoContent'>My WebPage</p>
           </div>
-          <div className='detailsInfo'>
-            <p className='highlight'>My WebPage</p>
-            {/* <p>{this.props.appState.email}</p> */}
+          <div className='detailsBoxBot'>
+            <p>{this.props.appState.webPage}</p>
           </div>
         </div>
       </div>
