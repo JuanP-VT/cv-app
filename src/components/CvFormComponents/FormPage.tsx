@@ -36,12 +36,14 @@ class FormPage extends Component<Props> {
               type='text'
               placeholder='Page Domain eg"GitHub"'
               onChange={() => this.props.saveInAppState(Dom, domInputId)}
+              value={this.props.pageDom}
             />
             <input
               id={this.props.urlInputId}
               type='text'
               placeholder='Page URL"'
               onChange={() => this.props.saveInAppState(Url, urlInputId)}
+              value={this.props.pageUrl}
             />
           </div>
           <div className='skillTemplateIcon'>

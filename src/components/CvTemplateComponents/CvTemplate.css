@@ -46,7 +46,7 @@
 #templateMain {
   width: 70%;
   border-right: solid black 1px;
-  padding: 15px;
+  padding: 25px;
 }
 #templateSide {
   display: flex;
