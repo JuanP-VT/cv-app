@@ -10,7 +10,7 @@ class Education extends Component<Props> {
 
   render() {
     return (
-      <div id='templateEducation'>
+      <div id='formEducation'>
         <div className='highlight'>Education</div>
         <input
           id='uniName'

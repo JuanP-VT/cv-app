@@ -7,7 +7,7 @@ interface Props {
 
 class Pages extends Component<Props> {
   render() {
-    return <div id='templatePages'>Pages</div>
+    return <div id='formPages'>Pages</div>
   }
 }
 

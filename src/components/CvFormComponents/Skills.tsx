@@ -38,7 +38,7 @@ class Skills extends Component<Props> {
     const skill9Val = this.props.appState.skill9
 
     return (
-      <div id='templateSkills'>
+      <div id='formSkills'>
         <div className='highlight'>Skills</div>
 
         {hasSkill1 && (

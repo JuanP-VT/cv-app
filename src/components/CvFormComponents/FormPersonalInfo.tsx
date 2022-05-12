@@ -13,7 +13,7 @@ class FormPersonalInfo extends Component<Props> {
 
   render() {
     return (
-      <div id='templatePersonalInfo'>
+      <div id='formPersonalInfo'>
         <div className='highlight'>Personal Information</div>
         <input
           id='firstName'
