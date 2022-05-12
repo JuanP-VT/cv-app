@@ -32,6 +32,7 @@ export default class CvForm extends PureComponent<Props> {
           appState={this.props.appState}
           saveInAppState={this.props.saveInAppState}
           handleAddPage={this.props.handleAddPage}
+          handleIconFiles={this.props.handleIconFiles}
         />
         <Skills
           appState={this.props.appState}

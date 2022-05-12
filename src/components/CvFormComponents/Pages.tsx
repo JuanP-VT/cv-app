@@ -6,6 +6,7 @@ interface Props {
   appState: appState
   saveInAppState: (objProp: string, id: string) => void
   handleAddPage: () => void
+  handleIconFiles: (objProp: string, id: string) => void
 }
 
 class Pages extends Component<Props> {
@@ -35,12 +36,14 @@ class Pages extends Component<Props> {
             pageUrl={page1Url}
             pageDom={page1Dom}
             saveInAppState={this.props.saveInAppState}
+            handleIconFiles={this.props.handleIconFiles}
             pageNum={1}
             refInStateSrc='page1Src'
             refInStateUrl='page1Url'
             refInStateDom='page1Dom'
             urlInputId='urlInput1'
             domInputId='domInput1'
+            srcInputId='srcInput1'
           />
         )}
 
