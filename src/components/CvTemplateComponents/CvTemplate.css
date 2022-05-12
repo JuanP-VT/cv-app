@@ -55,13 +55,11 @@
 }
 #photoContainer {
   display: flex;
-  height: 33%;
   width: 100%;
   border-bottom: 1px solid black;
   justify-items: center;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 #userPhoto {
   height: 100%;
@@ -71,7 +69,6 @@
 #personalDetails {
   display: flex;
   flex-direction: column;
-  height: 33%;
   padding: 20px;
 }
 #personalDetailsHeader {
@@ -115,7 +112,6 @@
 #referencePages {
   display: flex;
   flex-direction: column;
-  height: 33%;
 }
 #templateDescription {
   display: flex;
