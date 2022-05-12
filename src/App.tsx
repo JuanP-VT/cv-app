@@ -128,6 +128,16 @@ class App extends Component {
       this.updateSkillsInState,
     )
   }
+  handleRemSkill = () => {
+    if (this.state.numOfSkills > 0) {
+      this.setState(
+        (prevState: appState) => ({
+          numOfSkills: prevState.numOfSkills - 1,
+        }),
+        this.updateSkillsInState,
+      )
+    }
+  }
   loadDemo = () => {
     this.setState(DEMO)
   }
@@ -141,6 +151,7 @@ class App extends Component {
             saveInAppState={this.saveInAppState}
             savePhotoSrc={this.savePhotoSrc}
             handleAddSkill={this.handleAddSkill}
+            handleRemSkill={this.handleRemSkill}
             handleIconFiles={this.handleIconFile}
           />
           <CvTemplate appState={this.state} />
