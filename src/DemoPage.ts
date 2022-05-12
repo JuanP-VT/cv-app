@@ -1,3 +1,10 @@
+import profilePic from './components/img/demo/profilepic .jpg'
+import jsIcon from './components/img/demo/js.png'
+import tsIcon from './components/img/demo/typescript.png'
+import reactIcon from './components/img/demo/physics.png'
+import nodeIcon from './components/img/demo/nodejs.png'
+import cssIcon from './components/img/demo/css-3.png'
+import tddIcon from './components/img/demo/test.png'
 const DEMO = {
   numOfSkills: 6,
   hasSkill1: true,
@@ -12,7 +19,7 @@ const DEMO = {
   firstName: 'Juan Pablo',
   lastName: 'Valdez Torres',
   title: 'Junior Web Developer',
-  photoSrc: 'blob:http://localhost:3000/cd815b92-a249-46ed-a8e9-ea0f15fb762a',
+  photoSrc: '',
   address: 'Av. Sinaloita 751',
   phoneNumber: '6682315176',
   email: 'cv.juanp@gmail.com',
@@ -25,16 +32,23 @@ const DEMO = {
   uniFrom: '2014',
   uniTo: '2019',
   skill1: 'JavaScript',
-  skill1Src: 'blob:http://localhost:3000/3be6c65b-3983-4dec-84cd-da4782fe310a',
-  skill2Src: 'blob:http://localhost:3000/015c7bd1-ec60-4242-ace7-cfad07ab8600',
+  skill1Src: '',
+  skill2Src: '',
   skill2: 'TypeScript',
   skill3: 'React',
-  skill3Src: 'blob:http://localhost:3000/e4e19a2e-c71b-4908-a0bc-6a3f5080d1a1',
+  skill3Src: '',
   skill4: 'NodeJS - Express',
-  skill4Src: 'blob:http://localhost:3000/37c84432-f8ac-4082-afbe-b43702569289',
+  skill4Src: '',
   skill5: 'CSS',
-  skill5Src: 'blob:http://localhost:3000/ad0c7229-e233-4de8-b97b-b33b2d30f56f',
+  skill5Src: '',
   skill6: 'TDD Principles',
+  skill6Src: '',
 }
-
+DEMO.photoSrc = profilePic
+DEMO.skill1Src = jsIcon
+DEMO.skill2Src = tsIcon
+DEMO.skill3Src = reactIcon
+DEMO.skill4Src = nodeIcon
+DEMO.skill5Src = cssIcon
+DEMO.skill6Src = tddIcon
 export default DEMO

@@ -7,7 +7,6 @@ export default class Footer extends Component<Props> {
   render() {
     return (
       <div>
-        Footer{' '}
         <button id='demoPageBtn' onClick={() => this.props.loadDemo()}>
           Demo
         </button>
