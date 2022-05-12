@@ -39,6 +39,8 @@ class Skills extends Component<Props> {
 
     return (
       <div id='templateSkills'>
+        <div className='highlight'>Skills</div>
+
         {hasSkill1 && (
           <FormSkill
             appState={this.props.appState}
