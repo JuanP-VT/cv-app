@@ -6,6 +6,8 @@ import nodeIcon from './components/img/demo/nodejs.png'
 import cssIcon from './components/img/demo/css-3.png'
 import htmlIcon from './components/img/demo/html.png'
 import gitIcon from './components/img/demo/git.png'
+import gitHubIcon from './components/img/demo/github.png'
+import myWebIcon from './components/img/demo/webpage.png'
 const DEMO = {
   numOfSkills: 7,
   hasSkill1: true,
@@ -17,6 +19,16 @@ const DEMO = {
   hasSkill7: true,
   hasSkill8: false,
   hasSkill9: false,
+  hasPage1: true,
+  hasPage2: true,
+  hasPage3: false,
+  hasPage4: false,
+  page1Dom: 'GitHub',
+  page1Url: 'https://github.com/JuanP-VT',
+  page1Src: '',
+  page2Dom: 'Personal CV Page',
+  page2Url: 'www.eg.com',
+  page2Src: '',
   firstName: 'Juan Pablo',
   lastName: 'Valdez Torres',
   title: 'Junior Web Developer',
@@ -55,4 +67,6 @@ DEMO.skill4Src = nodeIcon
 DEMO.skill5Src = cssIcon
 DEMO.skill6Src = htmlIcon
 DEMO.skill7Src = gitIcon
+DEMO.page1Src = gitHubIcon
+DEMO.page2Src = myWebIcon
 export default DEMO
