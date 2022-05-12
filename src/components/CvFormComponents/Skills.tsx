@@ -141,10 +141,10 @@ class Skills extends Component<Props> {
             />
           )}
         </div>
-        <button id='addSkill' onClick={this.props.handleAddSkill}>
+        <button className='button-62' id='addSkill' onClick={this.props.handleAddSkill}>
           Add Skill
         </button>
-        <button id='removeSkill' onClick={this.props.handleRemSkills}>
+        <button className='button-62' id='removeSkill' onClick={this.props.handleRemSkills}>
           Remove Skill
         </button>
       </div>

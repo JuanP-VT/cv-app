@@ -96,7 +96,7 @@ class Pages extends Component<Props> {
             />
           )}
         </div>
-        <button id='addPage' onClick={() => this.props.handleAddPage()}>
+        <button className='button-62' id='addPage' onClick={() => this.props.handleAddPage()}>
           Add Page
         </button>
       </div>
