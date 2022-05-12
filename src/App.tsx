@@ -23,6 +23,11 @@ class App extends Component {
     hasSkill7: false,
     hasSkill8: false,
     hasSkill9: false,
+    numOfPages: 0,
+    hasPage1: false,
+    hasPage2: false,
+    hasPage3: false,
+    hasPage4: false,
   }
   saveInAppState = (objProp: string, id: string) => {
     // Parameter id refers to input id

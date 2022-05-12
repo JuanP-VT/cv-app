@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import appState from '../interface'
-import gitHubIcon from '../img/github.png'
-import myPage from '../img/webpage.png'
 interface Props {
   appState: appState
 }
@@ -13,35 +11,61 @@ class ReferencePages extends Component<Props> {
   state = {}
 
   render() {
+    const hasPage1 = this.props.appState.hasPage1
+    const hasPage2 = this.props.appState.hasPage2
+    const hasPage3 = this.props.appState.hasPage3
+    const hasPage4 = this.props.appState.hasPage4
+
     return (
       <div id='templatePages'>
         <div id='templatePagesHeader' className='highlight'>
           Pages
         </div>
 
-        <div className='detailsBox'>
-          <div className='detailsBoxTop'>
-            <div className='detailsIconBox'>
-              <img src={gitHubIcon} alt='gitHubIcon' className='detailsIcon' />
+        {hasPage1 && (
+          <div className='detailsBox'>
+            <div className='detailsBoxTop'>
+              <img src={this.props.appState.page1Src} alt='' className='detailsIcon' />
+              <p className='highlight personalInfoContent'>{this.props.appState.page1Dom}</p>
             </div>
-            <p className='highlight personalInfoContent'>GitHub</p>
-          </div>
-          <div className='detailsBoxBot'>
-            <p>{this.props.appState.gitHub}</p>
-          </div>
-        </div>
-
-        <div className='detailsBox'>
-          <div className='detailsBoxTop'>
-            <div className='detailsIconBox'>
-              <img src={myPage} alt='myPageIcon' className='detailsIcon' />
+            <div className='detailsBoxBot'>
+              <p>{this.props.appState.page1Url}</p>
             </div>
-            <p className='highlight personalInfoContent'>My WebPage</p>
           </div>
-          <div className='detailsBoxBot'>
-            <p>{this.props.appState.webPage}</p>
+        )}
+        {hasPage2 && (
+          <div className='detailsBox'>
+            <div className='detailsBoxTop'>
+              <img src={this.props.appState.page2Src} alt='' className='detailsIcon' />
+              <p className='highlight personalInfoContent'>{this.props.appState.page2Dom}</p>
+            </div>
+            <div className='detailsBoxBot'>
+              <p>{this.props.appState.page2Url}</p>
+            </div>
           </div>
-        </div>
+        )}
+        {hasPage3 && (
+          <div className='detailsBox'>
+            <div className='detailsBoxTop'>
+              <img src={this.props.appState.page3Src} alt='' className='detailsIcon' />
+              <p className='highlight personalInfoContent'>{this.props.appState.page3Dom}</p>
+            </div>
+            <div className='detailsBoxBot'>
+              <p>{this.props.appState.page3Url}</p>
+            </div>
+          </div>
+        )}
+        {hasPage4 && (
+          <div className='detailsBox'>
+            <div className='detailsBoxTop'>
+              <img src={this.props.appState.page4Src} alt='' className='detailsIcon' />
+              <p className='highlight personalInfoContent'>{this.props.appState.page4Dom}</p>
+            </div>
+            <div className='detailsBoxBot'>
+              <p>{this.props.appState.page4Url}</p>
+            </div>
+          </div>
+        )}
       </div>
     )
   }
