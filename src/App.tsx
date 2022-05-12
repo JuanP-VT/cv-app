@@ -6,7 +6,7 @@ import CvForm from './components/CvForm'
 import Footer from './components/Footer'
 import CvTemplate from './components/CvTemplate'
 import appState from './components/interface'
-
+import DEMO from './DemoPage'
 class App extends Component {
   constructor(props: string) {
     super(props)
@@ -128,6 +128,9 @@ class App extends Component {
       this.updateSkillsInState,
     )
   }
+  loadDemo = () => {
+    this.setState(DEMO)
+  }
   render() {
     return (
       <>
@@ -142,7 +145,7 @@ class App extends Component {
           />
           <CvTemplate appState={this.state} />
         </div>
-        <Footer />
+        <Footer loadDemo={this.loadDemo} />
       </>
     )
   }

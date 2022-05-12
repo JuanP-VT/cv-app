@@ -1,7 +1,17 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
+interface Props {
+  loadDemo: () => void
+}
 
-export default class Footer extends PureComponent {
+export default class Footer extends Component<Props> {
   render() {
-    return <div>Footer</div>
+    return (
+      <div>
+        Footer{' '}
+        <button id='demoPageBtn' onClick={() => this.props.loadDemo()}>
+          Demo
+        </button>
+      </div>
+    )
   }
 }
