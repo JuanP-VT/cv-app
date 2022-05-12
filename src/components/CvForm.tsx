@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import Education from './CvFormComponents/Education'
 import FormPersonalInfo from './CvFormComponents/FormPersonalInfo'
+import Pages from './CvFormComponents/Pages'
 import Skills from './CvFormComponents/Skills'
 import appState from './interface'
 interface Props {
@@ -26,6 +27,7 @@ export default class CvForm extends PureComponent<Props> {
           savePhotoSrc={this.props.savePhotoSrc}
           appState={this.props.appState}
         />
+        <Pages appState={this.props.appState} />
         <Skills
           appState={this.props.appState}
           saveInAppState={this.props.saveInAppState}

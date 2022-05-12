@@ -7,7 +7,7 @@ import cssIcon from './components/img/demo/css-3.png'
 import htmlIcon from './components/img/demo/html.png'
 import gitIcon from './components/img/demo/git.png'
 const DEMO = {
-  numOfSkills: 6,
+  numOfSkills: 7,
   hasSkill1: true,
   hasSkill2: true,
   hasSkill3: true,
