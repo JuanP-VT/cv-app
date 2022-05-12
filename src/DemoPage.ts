@@ -4,7 +4,8 @@ import tsIcon from './components/img/demo/typescript.png'
 import reactIcon from './components/img/demo/physics.png'
 import nodeIcon from './components/img/demo/nodejs.png'
 import cssIcon from './components/img/demo/css-3.png'
-import tddIcon from './components/img/demo/test.png'
+import htmlIcon from './components/img/demo/html.png'
+import gitIcon from './components/img/demo/git.png'
 const DEMO = {
   numOfSkills: 6,
   hasSkill1: true,
@@ -13,7 +14,7 @@ const DEMO = {
   hasSkill4: true,
   hasSkill5: true,
   hasSkill6: true,
-  hasSkill7: false,
+  hasSkill7: true,
   hasSkill8: false,
   hasSkill9: false,
   firstName: 'Juan Pablo',
@@ -33,16 +34,18 @@ const DEMO = {
   uniTo: '2019',
   skill1: 'JavaScript',
   skill1Src: '',
-  skill2Src: '',
   skill2: 'TypeScript',
+  skill2Src: '',
   skill3: 'React',
   skill3Src: '',
   skill4: 'NodeJS - Express',
   skill4Src: '',
   skill5: 'CSS',
   skill5Src: '',
-  skill6: 'TDD Principles',
+  skill6: 'HTML',
   skill6Src: '',
+  skill7: 'Git',
+  skill7Src: '',
 }
 DEMO.photoSrc = profilePic
 DEMO.skill1Src = jsIcon
@@ -50,5 +53,6 @@ DEMO.skill2Src = tsIcon
 DEMO.skill3Src = reactIcon
 DEMO.skill4Src = nodeIcon
 DEMO.skill5Src = cssIcon
-DEMO.skill6Src = tddIcon
+DEMO.skill6Src = htmlIcon
+DEMO.skill7Src = gitIcon
 export default DEMO
