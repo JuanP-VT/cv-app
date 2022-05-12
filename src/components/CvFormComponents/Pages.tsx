@@ -30,71 +30,72 @@ class Pages extends Component<Props> {
     return (
       <div id='formPages'>
         <div className='highlight'>Pages</div>
-        {hasPage1 && (
-          <FormPage
-            appState={this.props.appState}
-            pageUrl={page1Url}
-            pageDom={page1Dom}
-            saveInAppState={this.props.saveInAppState}
-            handleIconFiles={this.props.handleIconFiles}
-            pageNum={1}
-            refInStateSrc='page1Src'
-            refInStateUrl='page1Url'
-            refInStateDom='page1Dom'
-            urlInputId='urlInput1'
-            domInputId='domInput1'
-            srcInputId='srcInput1'
-          />
-        )}
-        {hasPage2 && (
-          <FormPage
-            appState={this.props.appState}
-            pageUrl={page2Url}
-            pageDom={page2Dom}
-            saveInAppState={this.props.saveInAppState}
-            handleIconFiles={this.props.handleIconFiles}
-            pageNum={2}
-            refInStateSrc='page2Src'
-            refInStateUrl='page2Url'
-            refInStateDom='page2Dom'
-            urlInputId='urlInput2'
-            domInputId='domInput2'
-            srcInputId='srcInput2'
-          />
-        )}
-        {hasPage3 && (
-          <FormPage
-            appState={this.props.appState}
-            pageUrl={page3Url}
-            pageDom={page3Dom}
-            saveInAppState={this.props.saveInAppState}
-            handleIconFiles={this.props.handleIconFiles}
-            pageNum={3}
-            refInStateSrc='page3Src'
-            refInStateUrl='page3Url'
-            refInStateDom='page3Dom'
-            urlInputId='urlInput3'
-            domInputId='domInput3'
-            srcInputId='srcInput3'
-          />
-        )}
-        {hasPage4 && (
-          <FormPage
-            appState={this.props.appState}
-            pageUrl={page4Url}
-            pageDom={page4Dom}
-            saveInAppState={this.props.saveInAppState}
-            handleIconFiles={this.props.handleIconFiles}
-            pageNum={4}
-            refInStateSrc='page4Src'
-            refInStateUrl='page4Url'
-            refInStateDom='page4Dom'
-            urlInputId='urlInput4'
-            domInputId='domInput4'
-            srcInputId='srcInput4'
-          />
-        )}
-
+        <div id='formPagesContainer'>
+          {hasPage1 && (
+            <FormPage
+              appState={this.props.appState}
+              pageUrl={page1Url}
+              pageDom={page1Dom}
+              saveInAppState={this.props.saveInAppState}
+              handleIconFiles={this.props.handleIconFiles}
+              pageNum={1}
+              refInStateSrc='page1Src'
+              refInStateUrl='page1Url'
+              refInStateDom='page1Dom'
+              urlInputId='urlInput1'
+              domInputId='domInput1'
+              srcInputId='srcInput1'
+            />
+          )}
+          {hasPage2 && (
+            <FormPage
+              appState={this.props.appState}
+              pageUrl={page2Url}
+              pageDom={page2Dom}
+              saveInAppState={this.props.saveInAppState}
+              handleIconFiles={this.props.handleIconFiles}
+              pageNum={2}
+              refInStateSrc='page2Src'
+              refInStateUrl='page2Url'
+              refInStateDom='page2Dom'
+              urlInputId='urlInput2'
+              domInputId='domInput2'
+              srcInputId='srcInput2'
+            />
+          )}
+          {hasPage3 && (
+            <FormPage
+              appState={this.props.appState}
+              pageUrl={page3Url}
+              pageDom={page3Dom}
+              saveInAppState={this.props.saveInAppState}
+              handleIconFiles={this.props.handleIconFiles}
+              pageNum={3}
+              refInStateSrc='page3Src'
+              refInStateUrl='page3Url'
+              refInStateDom='page3Dom'
+              urlInputId='urlInput3'
+              domInputId='domInput3'
+              srcInputId='srcInput3'
+            />
+          )}
+          {hasPage4 && (
+            <FormPage
+              appState={this.props.appState}
+              pageUrl={page4Url}
+              pageDom={page4Dom}
+              saveInAppState={this.props.saveInAppState}
+              handleIconFiles={this.props.handleIconFiles}
+              pageNum={4}
+              refInStateSrc='page4Src'
+              refInStateUrl='page4Url'
+              refInStateDom='page4Dom'
+              urlInputId='urlInput4'
+              domInputId='domInput4'
+              srcInputId='srcInput4'
+            />
+          )}
+        </div>
         <button id='addPage' onClick={() => this.props.handleAddPage()}>
           Add Page
         </button>
