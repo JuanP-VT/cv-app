@@ -172,12 +172,14 @@ class App extends Component {
     )
   }
   handleAddSkill = () => {
-    this.setState(
-      (prevState: appState) => ({
-        numOfSkills: prevState.numOfSkills + 1,
-      }),
-      this.updateSkillsInState,
-    )
+    if (this.state.numOfSkills < 9) {
+      this.setState(
+        (prevState: appState) => ({
+          numOfSkills: prevState.numOfSkills + 1,
+        }),
+        this.updateSkillsInState,
+      )
+    }
   }
   handleRemSkill = () => {
     if (this.state.numOfSkills > 0) {
@@ -190,12 +192,17 @@ class App extends Component {
     }
   }
   handleAddPage = () => {
-    this.setState(
-      (prevState: appState) => ({
-        numOfPages: prevState.numOfPages + 1,
-      }),
-      this.updatePagesInState,
-    )
+    if (this.state.numOfPages < 5) {
+      this.setState(
+        (prevState: appState) => ({
+          numOfPages: prevState.numOfPages + 1,
+        }),
+        this.updatePagesInState,
+      )
+    }
+  }
+  handleRemovePage = () => {
+    //
   }
   updatePagesInState = () => {
     const currentNumberOfPages = this.state.numOfPages

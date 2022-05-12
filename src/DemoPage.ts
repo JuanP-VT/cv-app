@@ -10,6 +10,7 @@ import gitHubIcon from './components/img/demo/github.png'
 import myWebIcon from './components/img/demo/webpage.png'
 const DEMO = {
   numOfSkills: 7,
+  numOfPages: 2,
   hasSkill1: true,
   hasSkill2: true,
   hasSkill3: true,
