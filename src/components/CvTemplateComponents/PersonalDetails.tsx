@@ -18,32 +18,35 @@ class PersonalDetails extends Component<Props> {
         <div id='personalDetailsHeader' className='highlight'>
           Personal Details
         </div>
+
         <div className='detailsBox'>
-          <div className='detailsIconBox'>
-            <img src={addressIcon} alt='addressIcon' className='detailsIcon' />
+          <div className='detailsBoxTop'>
+            <div className='detailsIconBox'>
+              <img src={addressIcon} alt='addressIcon' className='detailsIcon' />
+            </div>
+            <p className='highlight personalInfoContent'>Address</p>
           </div>
-          <div className='detailsInfo'>
-            <p className='highlight'>Address</p>
+          <div className='detailsBoxBot'>
             <p>{this.props.appState.address}</p>
           </div>
         </div>
 
         <div className='detailsBox'>
-          <div className='detailsIconBox'>
+          <div className='detailsBoxTop'>
             <img src={phoneIcon} alt='phoneIcon' className='detailsIcon' />
+            <p className='highlight personalInfoContent'>Phone Number</p>
           </div>
-          <div className='detailsInfo'>
-            <p className='highlight'>Phone Number</p>
+          <div className='detailsBoxBot'>
             <p>{this.props.appState.phoneNumber}</p>
           </div>
         </div>
 
         <div className='detailsBox'>
-          <div className='detailsIconBox'>
-            <img src={email} alt='emailIcon' className='detailsIcon' />
+          <div className='detailsBoxTop'>
+            <img src={email} alt='emialIcon' className='detailsIcon' />
+            <p className='highlight personalInfoContent'>Email</p>
           </div>
-          <div className='detailsInfo'>
-            <p className='highlight'>Email</p>
+          <div className='detailsBoxBot'>
             <p>{this.props.appState.email}</p>
           </div>
         </div>
