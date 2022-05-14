@@ -68,10 +68,14 @@ class Experience extends Component<Props> {
             saveInAppState={this.props.saveInAppState}
           />
         )}
-        <button id='addExperience' onClick={this.props.handleAddExperience}>
+        <button id='addExperience' className='button-62' onClick={this.props.handleAddExperience}>
           Add Experience
         </button>
-        <button id='removeExperience' onClick={this.props.handleRemoveExperience}>
+        <button
+          id='removeExperience'
+          className='button-62'
+          onClick={this.props.handleRemoveExperience}
+        >
           Remove Experience
         </button>
       </div>
