@@ -9,7 +9,7 @@ class CvTemplateEducation extends Component<Props> {
   render() {
     return (
       <div id='templateEducation'>
-        <div className='highlight'>Education</div>
+        <div className='highlight accent'>Education</div>
         <div className='eduBox'>
           <div className='eduSide'>
             <div className='eduDates'>

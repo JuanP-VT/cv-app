@@ -19,7 +19,7 @@ class Experience extends Component<Props> {
     const hasExperiencep4 = this.props.appState.hasExperience4
     return (
       <div id='formExperience'>
-        <div className='highlight'>Experience</div>
+        <div className='highlight accent'>Experience</div>
         {hasExperiencep1 && (
           <FormExperience
             xpNum='Experience 1'

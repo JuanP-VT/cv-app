@@ -19,7 +19,7 @@ class CvTemplateSkills extends Component<Props> {
     const hasSkill9 = this.props.appState.hasSkill9
     return (
       <div id='templateSkills'>
-        <span className='highlight'>Skills</span>
+        <span className='highlight accent'>Skills</span>
         <div id='skillContainer'>
           {hasSkill1 && (
             <Skill skill={this.props.appState.skill1} skillSrc={this.props.appState.skill1Src} />

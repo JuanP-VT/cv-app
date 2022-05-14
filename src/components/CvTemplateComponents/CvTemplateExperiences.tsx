@@ -14,7 +14,7 @@ class CvTemplateExperiences extends Component<Props> {
     const hasExperience4 = this.props.appState.hasExperience4
     return (
       <div id='templateExperiences'>
-        <div className='highlight'>Experiences</div>
+        <div className='highlight accent'>Experiences</div>
         {hasExperience1 && (
           <ExperienceTemplate
             appState={this.props.appState}

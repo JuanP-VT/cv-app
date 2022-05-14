@@ -11,7 +11,7 @@ class Education extends Component<Props> {
   render() {
     return (
       <div id='formEducation'>
-        <div className='highlight'>Education</div>
+        <div className='highlight accent'>Education</div>
         <input
           id='uniName'
           type='text'

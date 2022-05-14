@@ -39,7 +39,7 @@ class Skills extends Component<Props> {
 
     return (
       <div id='formSkills'>
-        <div className='highlight'>Skills</div>
+        <div className='highlight accent'>Skills</div>
         <div id='skillContainer'>
           {hasSkill1 && (
             <FormSkill

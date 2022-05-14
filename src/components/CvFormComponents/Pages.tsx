@@ -30,7 +30,7 @@ class Pages extends Component<Props> {
 
     return (
       <div id='formPages'>
-        <div className='highlight'>Pages</div>
+        <div className='highlight accent'>Pages</div>
         <div id='formPagesContainer'>
           {hasPage1 && (
             <FormPage

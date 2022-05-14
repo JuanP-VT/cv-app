@@ -14,7 +14,7 @@ class CvTemplateDescription extends Component<Props> {
   render() {
     return (
       <div id='templateDescription'>
-        <div className='highlight'>Description</div>
+        <div className='highlight accent'>Description</div>
         <div id='descriptionContent'>{this.props.appState.description}</div>
       </div>
     )
