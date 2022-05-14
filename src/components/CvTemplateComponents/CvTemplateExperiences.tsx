@@ -13,7 +13,7 @@ class CvTemplateExperiences extends Component<Props> {
     const hasExperience3 = this.props.appState.hasExperience3
     const hasExperience4 = this.props.appState.hasExperience4
     return (
-      <div>
+      <div id='templateExperiences'>
         <div className='highlight'>Experiences</div>
         {hasExperience1 && (
           <ExperienceTemplate

@@ -1,5 +1,6 @@
 .highlight {
   font-weight: 800;
+  font-size: 1.15rem;
 }
 .highlight-low {
   font-weight: 400;
@@ -116,6 +117,7 @@
 #templateDescription {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 #descriptionContent {
   width: 100%;
@@ -133,6 +135,7 @@
 #templateEducation {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 .eduBox {
   display: flex;
@@ -158,6 +161,10 @@
 /* } */
 #templateUniCityName {
   margin-left: 5px;
+}
+#templateSkills {
+  margin-bottom: 20px;
+  padding: 20px;
 }
 #skillContainer {
   display: grid;
@@ -199,19 +206,21 @@
   width: 30px;
   height: 30px;
 }
-
+#templateExperiences {
+  padding: 20px;
+}
 .experienceTemplateContainer {
   display: flex;
+  padding: 5px;
 }
 .experienceTemplateDates {
   display: flex;
   margin-right: 80px;
+  width: 20%;
 }
 .experienceTemplateContent {
   display: flex;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 .experienceTemplateBot {
   display: flex;
