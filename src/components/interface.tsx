@@ -60,4 +60,28 @@ export default interface appState {
   hasPage2?: boolean
   hasPage3?: boolean
   hasPage4?: boolean
+  xp1Position: string
+  xp1Company: string
+  xp1City: string
+  xp1From: string
+  xp1To: string
+  xp2Position: string
+  xp2Company: string
+  xp2City: string
+  xp2From: string
+  xp2To: string
+  xp3Position: string
+  xp3Company: string
+  xp3City: string
+  xp3From: string
+  xp3To: string
+  xp4Position: string
+  xp4Company: string
+  xp4City: string
+  xp4From: string
+  xp4To: string
+  hasExperience1: boolean
+  hasExperience2: boolean
+  hasExperience3: boolean
+  hasExperience4: boolean
 }
