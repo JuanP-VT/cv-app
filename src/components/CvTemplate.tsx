@@ -3,6 +3,7 @@ import React, { PureComponent } from 'react'
 import './CvTemplateComponents/CvTemplate.css'
 import CvTemplateDescription from './CvTemplateComponents/CvTemplateDescription'
 import CvTemplateEducation from './CvTemplateComponents/CvTemplateEducation'
+import CvTemplateExperiences from './CvTemplateComponents/CvTemplateExperiences'
 import CvTemplateHeader from './CvTemplateComponents/CvTemplateHeader'
 import CvTemplateSkills from './CvTemplateComponents/CvTemplateSkills'
 import PersonalDetails from './CvTemplateComponents/PersonalDetails'
@@ -29,6 +30,7 @@ export default class CvTemplate extends PureComponent<Props> {
             <CvTemplateDescription appState={this.props.appState} />
             <CvTemplateEducation appState={this.props.appState} />
             <CvTemplateSkills appState={this.props.appState} />
+            <CvTemplateExperiences appState={this.props.appState} />
           </div>
           <div id='templateSide'>
             <div id='photoContainer'>

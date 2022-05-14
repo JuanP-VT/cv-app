@@ -199,3 +199,23 @@
   width: 30px;
   height: 30px;
 }
+
+.experienceTemplateContainer {
+  display: flex;
+}
+.experienceTemplateDates {
+  display: flex;
+  margin-right: 80px;
+}
+.experienceTemplateContent {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.experienceTemplateBot {
+  display: flex;
+}
+.padLeft {
+  padding-left: 10px;
+}
