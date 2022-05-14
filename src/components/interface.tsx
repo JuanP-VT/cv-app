@@ -84,4 +84,5 @@ export default interface appState {
   hasExperience2: boolean
   hasExperience3: boolean
   hasExperience4: boolean
+  numOfExperiences: number
 }

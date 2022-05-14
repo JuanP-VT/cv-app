@@ -98,6 +98,7 @@ class App extends Component {
     hasExperience2: false,
     hasExperience3: false,
     hasExperience4: false,
+    numOfExperiences: 0,
   }
   saveInAppState = (objProp: string, id: string) => {
     // Parameter id refers to input id
@@ -265,6 +266,61 @@ class App extends Component {
         if (currentNumberOfPages >= 4) {
           this.setState({
             hasPage4: true,
+          })
+        }
+      },
+    )
+  }
+  handleAddExperience = () => {
+    if (this.state.numOfExperiences < 4) {
+      this.setState(
+        (prevState: appState) => ({
+          numOfExperiences: prevState.numOfExperiences + 1,
+        }),
+        this.updateExperienceInState,
+      )
+    }
+  }
+  handleRemoveExperience = () => {
+    if (this.state.numOfExperiences > 0) {
+      this.setState(
+        (prevState: appState) => ({
+          numOfExperiences: prevState.numOfExperiences - 1,
+        }),
+        this.updateSkillsInState,
+      )
+    }
+  }
+  updateExperienceInState = () => {
+    const currentNumberOfExperiences = this.state.numOfExperiences
+    /* Setting everything off by default then check conditions to toggle the ones that 
+    are required */
+    this.setState(
+      {
+        hasExperience1: false,
+        hasExperience2: false,
+        hasExperience3: false,
+        hasExperience4: false,
+      },
+      () => {
+        if (currentNumberOfExperiences >= 1) {
+          this.setState({
+            hasExperience1: true,
+          })
+        }
+        if (currentNumberOfExperiences >= 2) {
+          this.setState({
+            hasExperience2: true,
+          })
+        }
+        if (currentNumberOfExperiences >= 3) {
+          this.setState({
+            hasExperience3: true,
+          })
+        }
+        if (currentNumberOfExperiences >= 4) {
+          this.setState({
+            hasExperience4: true,
           })
         }
       },
