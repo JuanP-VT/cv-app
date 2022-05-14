@@ -287,7 +287,7 @@ class App extends Component {
         (prevState: appState) => ({
           numOfExperiences: prevState.numOfExperiences - 1,
         }),
-        this.updateSkillsInState,
+        this.updateExperienceInState,
       )
     }
   }
@@ -343,6 +343,8 @@ class App extends Component {
             handleIconFiles={this.handleIconFile}
             handleAddPage={this.handleAddPage}
             handleRemovePage={this.handleRemovePage}
+            handleAddExperience={this.handleAddExperience}
+            handleRemoveExperience={this.handleRemoveExperience}
           />
           <CvTemplate appState={this.state} />
         </div>

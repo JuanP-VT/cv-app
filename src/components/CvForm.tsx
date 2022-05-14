@@ -13,6 +13,8 @@ interface Props {
   handleIconFiles: (objProp: string, id: string) => void
   handleAddPage: () => void
   handleRemovePage: () => void
+  handleAddExperience: () => void
+  handleRemoveExperience: () => void
   appState: appState
 }
 
@@ -45,7 +47,12 @@ export default class CvForm extends PureComponent<Props> {
           handleRemSkills={this.props.handleRemSkill}
           handleIconFiles={this.props.handleIconFiles}
         />
-        <Experience appState={this.props.appState} saveInAppState={this.props.saveInAppState} />
+        <Experience
+          appState={this.props.appState}
+          saveInAppState={this.props.saveInAppState}
+          handleAddExperience={this.props.handleAddExperience}
+          handleRemoveExperience={this.props.handleRemoveExperience}
+        />
       </div>
     )
   }
