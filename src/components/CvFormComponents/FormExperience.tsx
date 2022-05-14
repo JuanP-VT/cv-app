@@ -13,7 +13,6 @@ class FormExperience extends Component<Props> {
     return (
       <div className='formExperienceBox'>
         <span className='highlight'>Xp 1</span>
-
         <input placeholder='Position' />
         <input placeholder='Company' />
         <input placeholder='City' />

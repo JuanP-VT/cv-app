@@ -12,13 +12,13 @@
 
 #Header {
   font-family: 'Bungee', cursive;
-  height: 15vh;
+  /* height: 15vh; */
   width: 100%;
   font-size: 3rem;
   overflow: hidden;
 }
 #main {
-  height: clamp(800px, 1200px, 1500px);
+  /* height: clamp(800px, 1200px, 1500px); */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   padding-left: 100px;
@@ -41,7 +41,7 @@
 }
 
 #description {
-  height: 6vh;
+  /* height: 6vh; */
 }
 /*----- move to separate css file */
 #addSkill {
@@ -99,7 +99,6 @@ input {
 }
 
 .formExperienceBox {
-  display: flex;
 }
 .experienceDates {
 }

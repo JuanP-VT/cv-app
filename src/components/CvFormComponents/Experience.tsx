@@ -12,7 +12,6 @@ class Experience extends Component<Props> {
   render() {
     return (
       <div id='formExperience'>
-        <span className='highlight'>Xp 1</span>
         <div className='highlight'>Experience</div>
         <FormExperience id='' appState={this.props.appState} />
         <FormExperience id='' appState={this.props.appState} />
