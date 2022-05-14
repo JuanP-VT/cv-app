@@ -20,7 +20,7 @@ class FormExperience extends Component<Props> {
     const company = this.props.companyId
     const city = this.props.cityId
     const from = this.props.fromId
-    const to = this.props.toId
+    const To = this.props.toId
     return (
       <div className='formExperienceBox'>
         <span className='highlight'>{this.props.xpNum}</span>
@@ -47,7 +47,7 @@ class FormExperience extends Component<Props> {
         <input
           id={this.props.toId}
           placeholder='To'
-          onChange={() => this.props.saveInAppState(to, to)}
+          onChange={() => this.props.saveInAppState(To, To)}
         />
       </div>
     )

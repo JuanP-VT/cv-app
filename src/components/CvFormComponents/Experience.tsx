@@ -27,7 +27,7 @@ class Experience extends Component<Props> {
             companyId='xp1Company'
             cityId='xp1City'
             fromId='xp1From'
-            toId='xp1To '
+            toId='xp1To'
             appState={this.props.appState}
             saveInAppState={this.props.saveInAppState}
           />
@@ -39,7 +39,7 @@ class Experience extends Component<Props> {
             companyId='xp2Company'
             cityId='xp2City'
             fromId='xp2From'
-            toId='xp2To '
+            toId='xp2To'
             appState={this.props.appState}
             saveInAppState={this.props.saveInAppState}
           />
@@ -51,7 +51,7 @@ class Experience extends Component<Props> {
             companyId='xp3Company'
             cityId='xp3City'
             fromId='xp3From'
-            toId='xp3To '
+            toId='xp3To'
             appState={this.props.appState}
             saveInAppState={this.props.saveInAppState}
           />
@@ -63,7 +63,7 @@ class Experience extends Component<Props> {
             companyId='xp4Company'
             cityId='xp4City'
             fromId='xp4From'
-            toId='xp4To '
+            toId='xp4To'
             appState={this.props.appState}
             saveInAppState={this.props.saveInAppState}
           />
