@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import Education from './CvFormComponents/Education'
+import Experience from './CvFormComponents/Experience'
 import FormPersonalInfo from './CvFormComponents/FormPersonalInfo'
 import Pages from './CvFormComponents/Pages'
 import Skills from './CvFormComponents/Skills'
@@ -11,6 +12,7 @@ interface Props {
   handleRemSkill: () => void
   handleIconFiles: (objProp: string, id: string) => void
   handleAddPage: () => void
+  handleRemovePage: () => void
   appState: appState
 }
 
@@ -33,6 +35,7 @@ export default class CvForm extends PureComponent<Props> {
           saveInAppState={this.props.saveInAppState}
           handleAddPage={this.props.handleAddPage}
           handleIconFiles={this.props.handleIconFiles}
+          handleRemovePage={this.props.handleRemovePage}
         />
         <Skills
           appState={this.props.appState}
@@ -42,6 +45,7 @@ export default class CvForm extends PureComponent<Props> {
           handleRemSkills={this.props.handleRemSkill}
           handleIconFiles={this.props.handleIconFiles}
         />
+        <Experience appState={this.props.appState} />
       </div>
     )
   }

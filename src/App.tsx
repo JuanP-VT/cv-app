@@ -202,7 +202,14 @@ class App extends Component {
     }
   }
   handleRemovePage = () => {
-    //
+    if (this.state.numOfPages > 0) {
+      this.setState(
+        (prevState: appState) => ({
+          numOfPages: prevState.numOfPages - 1,
+        }),
+        this.updatePagesInState,
+      )
+    }
   }
   updatePagesInState = () => {
     const currentNumberOfPages = this.state.numOfPages
@@ -255,6 +262,7 @@ class App extends Component {
             handleRemSkill={this.handleRemSkill}
             handleIconFiles={this.handleIconFile}
             handleAddPage={this.handleAddPage}
+            handleRemovePage={this.handleRemovePage}
           />
           <CvTemplate appState={this.state} />
         </div>

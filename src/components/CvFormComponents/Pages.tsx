@@ -7,6 +7,7 @@ interface Props {
   saveInAppState: (objProp: string, id: string) => void
   handleAddPage: () => void
   handleIconFiles: (objProp: string, id: string) => void
+  handleRemovePage: () => void
 }
 
 class Pages extends Component<Props> {
@@ -98,6 +99,9 @@ class Pages extends Component<Props> {
         </div>
         <button className='button-62' id='addPage' onClick={() => this.props.handleAddPage()}>
           Add Page
+        </button>
+        <button className='button-62' id='removePage' onClick={() => this.props.handleRemovePage()}>
+          Remove Page
         </button>
       </div>
     )
