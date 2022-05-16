@@ -30,6 +30,11 @@ class Experience extends Component<Props> {
             toId='xp1To'
             appState={this.props.appState}
             saveInAppState={this.props.saveInAppState}
+            positionValue={this.props.appState.xp1Position}
+            companyValue={this.props.appState.xp1Company}
+            cityValue={this.props.appState.xp1City}
+            fromValue={this.props.appState.xp1From}
+            toValue={this.props.appState.xp1To}
           />
         )}
         {hasExperiencep2 && (
@@ -42,6 +47,11 @@ class Experience extends Component<Props> {
             toId='xp2To'
             appState={this.props.appState}
             saveInAppState={this.props.saveInAppState}
+            positionValue={this.props.appState.xp2Position}
+            companyValue={this.props.appState.xp2Company}
+            cityValue={this.props.appState.xp2City}
+            fromValue={this.props.appState.xp2From}
+            toValue={this.props.appState.xp2To}
           />
         )}
         {hasExperiencep3 && (
@@ -54,6 +64,11 @@ class Experience extends Component<Props> {
             toId='xp3To'
             appState={this.props.appState}
             saveInAppState={this.props.saveInAppState}
+            positionValue={this.props.appState.xp3Position}
+            companyValue={this.props.appState.xp3Company}
+            cityValue={this.props.appState.xp3City}
+            fromValue={this.props.appState.xp3From}
+            toValue={this.props.appState.xp3To}
           />
         )}
         {hasExperiencep4 && (
@@ -66,6 +81,11 @@ class Experience extends Component<Props> {
             toId='xp4To'
             appState={this.props.appState}
             saveInAppState={this.props.saveInAppState}
+            positionValue={this.props.appState.xp4Position}
+            companyValue={this.props.appState.xp4Company}
+            cityValue={this.props.appState.xp4City}
+            fromValue={this.props.appState.xp4From}
+            toValue={this.props.appState.xp4To}
           />
         )}
         <button id='addExperience' className='button-62' onClick={this.props.handleAddExperience}>

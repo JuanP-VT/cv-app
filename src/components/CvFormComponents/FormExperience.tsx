@@ -10,6 +10,11 @@ interface Props {
   toId: string
   xpNum: string
   saveInAppState: (objProp: string, id: string) => void
+  positionValue: string
+  companyValue: string
+  cityValue: string
+  toValue: string
+  fromValue: string
 }
 
 class FormExperience extends Component<Props> {
@@ -28,26 +33,31 @@ class FormExperience extends Component<Props> {
           id={this.props.positionId}
           placeholder='Position'
           onChange={() => this.props.saveInAppState(position, position)}
+          value={this.props.positionValue}
         />
         <input
           id={this.props.companyId}
           placeholder='Company'
           onChange={() => this.props.saveInAppState(company, company)}
+          value={this.props.companyValue}
         />
         <input
           id={this.props.cityId}
           placeholder='City'
           onChange={() => this.props.saveInAppState(city, city)}
+          value={this.props.cityValue}
         />
         <input
           id={this.props.fromId}
           placeholder='From'
           onChange={() => this.props.saveInAppState(from, from)}
+          value={this.props.fromValue}
         />
         <input
           id={this.props.toId}
           placeholder='To'
           onChange={() => this.props.saveInAppState(To, To)}
+          value={this.props.toValue}
         />
       </div>
     )
