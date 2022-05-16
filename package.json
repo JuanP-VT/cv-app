@@ -1,8 +1,8 @@
 {
   "name": "cv-app",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "git@github.com:JuanP-VT/cv-app.git",
+  "private": false,
+  "homepage": "https://JuanP-VT.github.io/cv-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
