@@ -56,10 +56,10 @@ export default class CvForm extends PureComponent<Props> {
           handleRemoveExperience={this.props.handleRemoveExperience}
         />
         <button className='button-63' id='demoPageBtn' onClick={() => this.props.loadDemo()}>
-          Demo
+          View Demo
         </button>
         <button className='button-63' id='generatePDF' onClick={this.props.generatePdf}>
-          PDF
+          Download as PDF
         </button>
       </div>
     )
