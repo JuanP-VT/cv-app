@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import CvTemplate from './components/CvTemplate'
 import appState from './components/interface'
 import DEMO from './DemoPage'
+import jsPDF from 'jspdf'
 class App extends Component {
   constructor(props: string) {
     super(props)
@@ -99,6 +100,29 @@ class App extends Component {
     hasExperience3: false,
     hasExperience4: false,
     numOfExperiences: 0,
+  }
+  // generatePdf = () => {
+  //   const doc = new jsPDF('p', 'pt', 'letter')
+  //   doc.html(document.querySelector('#templateContainer') as HTMLElement, {
+  //     callback: function (pdf) {
+  //       pdf.save('myPDF.pdf')
+  //     },
+  //   })
+  // }
+
+  generatePdf = () => {
+    const doc = new jsPDF('p', 'pt', 'letter')
+    const margin = 15
+    doc.html(document.querySelector('#templateContainer') as HTMLElement, {
+      x: margin,
+      y: margin,
+      html2canvas: {
+        scale: 0.7,
+      },
+      callback: function (pdf) {
+        pdf.save('myPDF.pdf')
+      },
+    })
   }
   saveInAppState = (objProp: string, id: string) => {
     // Parameter id refers to input id
@@ -348,7 +372,7 @@ class App extends Component {
           />
           <CvTemplate appState={this.state} />
         </div>
-        <Footer loadDemo={this.loadDemo} />
+        <Footer loadDemo={this.loadDemo} generatePdf={this.generatePdf} />
       </>
     )
   }
