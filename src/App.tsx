@@ -369,10 +369,12 @@ class App extends Component {
             handleRemovePage={this.handleRemovePage}
             handleAddExperience={this.handleAddExperience}
             handleRemoveExperience={this.handleRemoveExperience}
+            loadDemo={this.loadDemo}
+            generatePdf={this.generatePdf}
           />
           <CvTemplate appState={this.state} />
         </div>
-        <Footer loadDemo={this.loadDemo} generatePdf={this.generatePdf} />
+        <Footer />
       </>
     )
   }

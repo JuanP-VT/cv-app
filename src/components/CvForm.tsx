@@ -15,6 +15,8 @@ interface Props {
   handleRemovePage: () => void
   handleAddExperience: () => void
   handleRemoveExperience: () => void
+  loadDemo: () => void
+  generatePdf: () => void
   appState: appState
 }
 
@@ -53,6 +55,12 @@ export default class CvForm extends PureComponent<Props> {
           handleAddExperience={this.props.handleAddExperience}
           handleRemoveExperience={this.props.handleRemoveExperience}
         />
+        <button className='button-63' id='demoPageBtn' onClick={() => this.props.loadDemo()}>
+          Demo
+        </button>
+        <button className='button-63' id='generatePDF' onClick={this.props.generatePdf}>
+          PDF
+        </button>
       </div>
     )
   }
