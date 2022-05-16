@@ -22,7 +22,7 @@ body {
 #main {
   /* height: clamp(800px, 1200px, 1500px); */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
   padding-left: 100px;
   padding-right: 100px;
   gap: 20px;
