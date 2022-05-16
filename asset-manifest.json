@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/git@github.com:JuanP-VT/cv-app.git/static/css/main.9785c237.css",
+    "main.js": "/git@github.com:JuanP-VT/cv-app.git/static/js/main.f2135ee0.js",
+    "static/js/498.631949b8.chunk.js": "/git@github.com:JuanP-VT/cv-app.git/static/js/498.631949b8.chunk.js",
+    "static/js/703.fda66fc0.chunk.js": "/git@github.com:JuanP-VT/cv-app.git/static/js/703.fda66fc0.chunk.js",
+    "static/js/203.457ecfcb.chunk.js": "/git@github.com:JuanP-VT/cv-app.git/static/js/203.457ecfcb.chunk.js",
+    "static/media/profilepic .jpg": "/git@github.com:JuanP-VT/cv-app.git/static/media/profilepic .11842302db0fb4ea1bc5.jpg",
+    "static/media/physics.png": "/git@github.com:JuanP-VT/cv-app.git/static/media/physics.07d9e407d4e491c548d5.png",
+    "static/media/nodejs.png": "/git@github.com:JuanP-VT/cv-app.git/static/media/nodejs.007e99f68b718e476aba.png",
+    "static/media/webpage.png": "/git@github.com:JuanP-VT/cv-app.git/static/media/webpage.8fdb28deef0ebb8f368e.png",
+    "static/media/address.png": "/git@github.com:JuanP-VT/cv-app.git/static/media/address.da671a7bb536814b6290.png",
+    "static/media/git.png": "/git@github.com:JuanP-VT/cv-app.git/static/media/git.67fdda8f53601b3d8aa8.png",
+    "static/media/email.png": "/git@github.com:JuanP-VT/cv-app.git/static/media/email.1e54691e345b9b5973e3.png",
+    "static/media/github.png": "/git@github.com:JuanP-VT/cv-app.git/static/media/github.a855c3975c028d8069f5.png",
+    "static/media/phone.png": "/git@github.com:JuanP-VT/cv-app.git/static/media/phone.fb244201058d6b0c101c.png",
+    "static/media/css-3.png": "/git@github.com:JuanP-VT/cv-app.git/static/media/css-3.463e319bad8e0edf1ef7.png",
+    "static/media/typescript.png": "/git@github.com:JuanP-VT/cv-app.git/static/media/typescript.af108db04a54d784da9b.png",
+    "static/media/js.png": "/git@github.com:JuanP-VT/cv-app.git/static/media/js.3dfb665e058d08c99f28.png",
+    "index.html": "/git@github.com:JuanP-VT/cv-app.git/index.html",
+    "main.9785c237.css.map": "/git@github.com:JuanP-VT/cv-app.git/static/css/main.9785c237.css.map",
+    "main.f2135ee0.js.map": "/git@github.com:JuanP-VT/cv-app.git/static/js/main.f2135ee0.js.map",
+    "498.631949b8.chunk.js.map": "/git@github.com:JuanP-VT/cv-app.git/static/js/498.631949b8.chunk.js.map",
+    "703.fda66fc0.chunk.js.map": "/git@github.com:JuanP-VT/cv-app.git/static/js/703.fda66fc0.chunk.js.map",
+    "203.457ecfcb.chunk.js.map": "/git@github.com:JuanP-VT/cv-app.git/static/js/203.457ecfcb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9785c237.css",
+    "static/js/main.f2135ee0.js"
+  ]
+}
