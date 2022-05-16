@@ -1,4 +1,4 @@
-import profilePic from './components/img/demo/profilepic .jpg'
+import profilePic from './components/img/demo/profilepic.jpg'
 import jsIcon from './components/img/demo/js.png'
 import tsIcon from './components/img/demo/typescript.png'
 import reactIcon from './components/img/demo/physics.png'
@@ -34,13 +34,13 @@ const DEMO = {
   lastName: 'Valdez Torres',
   title: 'Junior Web Developer',
   photoSrc: '',
-  address: 'Av. Sinaloita 751',
-  phoneNumber: '6682315176',
+  address: 'Wolf Wall Street',
+  phoneNumber: '678-5a1-1315',
   email: 'cv.juanp@gmail.com',
   description:
-    "Y el cielo tocar, una Cessna para pilotear Y en un Razersón pa' las rutas, un polvaderón Y un buen caballón pa' pasear a una dama que traigo yo La banda llegó y mi compadrito ya se enfiestó Claro que se amerita, en mi rostro una sonrisa La mala racha pasó Claro que se amerita festejar por esta vida Saludos para el señor",
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt ex sed mauris suscipit egestas. Vivamus sagittis dignissim dolor vel semper. Fusce massa nisl, convallis sit amet fermentum vel, placerat vitae leo. In egestas arcu in lacus malesuada, id facilisis ante congue. Vestibulum mattis, justo at maximus varius, odio tortor bibendum tortor, a vestibulum leo nibh et nibh. Morbi scelerisque dui eu lectus porttitor, a ultrices arcu facilisis. Aliquam lacinia dolor eu augue dictum, vitae aliquet lorem mollis. ',
   uniName: 'Instituto Tecnologico Nacional',
-  uniCity: 'La Mochila',
+  uniCity: 'Mochis',
   uniDegree: 'Bachelords',
   uniSubject: 'Industrial Engineering',
   uniFrom: '2014',
