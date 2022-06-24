@@ -13,6 +13,7 @@ Typescript is now going to be the main language since I want to improve my toolk
 
 ## Features:
 
+- Download template as PDF
 - Detailed sections (personal info, education, work experience, skills)
 - Live preview
 - Allows to upload images/icons for your skills
