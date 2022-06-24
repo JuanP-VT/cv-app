@@ -7,7 +7,7 @@ class photoInput extends PureComponent<Props> {
   render() {
     return (
       <div id='photoInputContainer'>
-        <h6 id='photoInputText'>Photo</h6>
+        <h6 id='photoInputText'>Click To Add Photo</h6>
         <input id='photoInput' type='file' onChange={() => this.props.savePhotoSrc()} />
       </div>
     )
