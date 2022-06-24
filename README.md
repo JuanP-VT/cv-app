@@ -4,18 +4,21 @@
 
 This project is part of my **Curriculum Series**, the objective is to have a repository to prove my skills as a web developer.
 
+Now that I feel more confident with my javascript it is time to starting working with frameworks.
+This App generates a curriculum template from the fields you fill, the goal is to start working with React and for educational purposes, I will be using React class components.
 
+Typescript is now going to be the main language since I want to improve my toolkit and create better code.
 
-### Note: you can see a quick version using the demo button. Buttons in the summary section does not work within demo mode.
+### Note: You can click the demo button at the bottom of the page to see the page in action
 
 ## Features:
 
-- Generate responsive cards with the details of the book
-- Has button to change the read status
-- Has mode to display book by its read status
+- Detailed sections (personal info, education, work experience, skills)
+- Live preview
+- Allows to upload images/icons for your skills
 
 ## Objective
 
-- Practice more OOP
-- Practice clean code principles
-- Get familiar with LocalStorage
+- Practice Typescript
+- Practice React
+- Practice React class components
