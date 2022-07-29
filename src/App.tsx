@@ -101,14 +101,7 @@ class App extends Component {
     hasExperience4: false,
     numOfExperiences: 0,
   }
-  // generatePdf = () => {
-  //   const doc = new jsPDF('p', 'pt', 'letter')
-  //   doc.html(document.querySelector('#templateContainer') as HTMLElement, {
-  //     callback: function (pdf) {
-  //       pdf.save('myPDF.pdf')
-  //     },
-  //   })
-  // }
+
 
   generatePdf = () => {
     const doc = new jsPDF('p', 'pt', 'letter')
